@@ -13,11 +13,11 @@ module.exports = {
 			},
 			fontWeight: {},
 			colors: {
-				text: '#000000',
-				background: '#ffffff',
-				primary: '#30d556',
-				secondary: '#fbeaf7',
-				accent: '#9effb5',
+				text: '#220701',
+				background: '#fff7f5',
+				primary: '#8e76f9',
+				secondary: '#ffffff',
+				accent: '#76f98e',
 			},
 			animation: {
 				'spin-slower': 'spin-reversed 14s linear infinite',

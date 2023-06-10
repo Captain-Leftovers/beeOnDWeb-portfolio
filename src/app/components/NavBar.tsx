@@ -1,14 +1,10 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import {
-	GithubIcon,
-	LinkedInIcon,
 	MoonIcon,
 	SunIcon,
-	TwitterIcon,
 } from '@/components/Icons'
 
 export default function NavBar() {
@@ -60,33 +56,7 @@ export default function NavBar() {
 				</Link>
 			</nav>
 			<nav className="flex">
-				<motion.a
-					href="https://twitter.com/BeeondwebIvanov"
-					target="_blank"
-					className="w-8 mr-6"
-					whileHover={{ y: -2 }}
-					whileTap={{ scale: 0.9 }}
-				>
-					<TwitterIcon />
-				</motion.a>
-				<motion.a
-					href="https://www.linkedin.com/in/dobromir-ivanov-710136261/"
-					target="_blank"
-					className="w-8 mr-6"
-					whileHover={{ y: -2 }}
-					whileTap={{ scale: 0.9 }}
-				>
-					<LinkedInIcon />
-				</motion.a>{' '}
-				<motion.a
-					href="https://github.com/Captain-Leftovers"
-					target="_blank"
-					className="w-8 mr-6"
-					whileHover={{ y: -2 }}
-					whileTap={{ scale: 0.9 }}
-				>
-					<GithubIcon />
-				</motion.a>{' '}
+			
 				<a href="/" className="w-8">
 					<SunIcon />
 				</a>

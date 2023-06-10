@@ -1,7 +1,22 @@
-
+import Link from 'next/link'
 
 export default function Footer() {
-  return (
-    <div className="px-64 py-2 bg-background">Footer</div>
-  )
+	return (
+		<footer className='relative z-10 flex justify-between py-2 px-80'>
+			<span>
+				{new Date().getFullYear()} &copy; All Rights
+				Reserved.
+			</span>
+			<div className=''>
+				Build With{' '}
+				<span className='text-lg'>&#9825;&nbsp;</span>
+				by&nbsp;
+				<span className=''>BeeOnDWeb</span>
+			</div>
+			<Link href="/">Say hello</Link>
+		</footer>
+	)
 }
+
+
+//TODO : Add a link to the contact page or email me directly check all other links in footer
