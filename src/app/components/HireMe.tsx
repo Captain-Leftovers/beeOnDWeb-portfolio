@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { CircularSVG } from '@/components/Icons'
+import { CircularSVG, CircularText } from '@/components/Icons'
 
 export default function HireMe() {
 	return (
 		<div className="fixed flex items-center justify-center overflow-hidden left-8 bottom-8">
       <div className='relative flex items-center justify-center w-48 h-auto'>
-        <CircularSVG className={"fill-text animate-spin-slower "}/>
+        <CircularText className={"fill-text animate-spin-slower "}/>
 			<Link href="/" className="absolute flex items-center justify-center w-24 h-24 font-semibold transition-all duration-200 border border-solid rounded-full border-text bg-primary text-text hover:scale-105 active:scale-100">
 				Hire Me
 			</Link>
@@ -14,4 +14,4 @@ export default function HireMe() {
 	)
 }
 
-//TODO : Add a link to the contact page or email me directly
+//TODO : Add a link to the contact page or email me directly and fix it not fire on every change

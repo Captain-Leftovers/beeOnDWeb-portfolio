@@ -10,13 +10,13 @@
   outline: 2px dashed rgb(0, 17, 255);
 }
 
-*:hover {
-  outline: 2px dashed rgb(255, 0, 0);
-}
-
-/* * {
+/* *:hover {
   outline: 2px dashed rgb(255, 0, 0);
 } */
+
+* {
+  outline: 2px dashed rgb(255, 0, 0);
+}
 
 
 /* TODO ^ remove debbugging outline when not needed */
@@ -26,4 +26,6 @@
 	padding: 0;
 	margin: 0;
   background: #fff7f5;
+  
 }
+

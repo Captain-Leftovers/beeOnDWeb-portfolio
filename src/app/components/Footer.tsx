@@ -5,15 +5,15 @@ export default function Footer() {
 		<footer className='relative z-10 flex justify-between py-2 px-80'>
 			<span>
 				{new Date().getFullYear()} &copy; All Rights
-				Reserved.
+				Reserved
 			</span>
 			<div className=''>
-				Build With{' '}
+				Build with{' '}
 				<span className='text-lg'>&#9825;&nbsp;</span>
 				by&nbsp;
 				<span className=''>BeeOnDWeb</span>
 			</div>
-			<Link href="/">Say hello</Link>
+			{/* <Link href="/">Say hello</Link> */}
 		</footer>
 	)
 }
