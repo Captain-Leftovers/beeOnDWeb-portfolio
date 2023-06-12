@@ -2,15 +2,12 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import {
-	MoonIcon,
-	SunIcon,
-} from '@/components/Icons'
+import { MoonIcon, SunIcon } from '@/components/Icons'
 
 export default function NavBar() {
 	const pathname = usePathname()
 	return (
-		<header className="flex items-center justify-between w-full py-8 font-medium px-80">
+		<header className="flex items-center justify-between w-full py-8 font-medium px-80 sticky top-0 z-50 ">
 			<nav className="">
 				<Link href="/" className="relative mr-6 group">
 					Home
@@ -28,7 +25,7 @@ export default function NavBar() {
 					href="/about"
 					className="relative mr-6 group"
 				>
-					About
+					Learn about me
 					<span
 						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent group-hover:w-full transition-[width] ease duration-300 ${
 							pathname === '/about'
@@ -56,7 +53,6 @@ export default function NavBar() {
 				</Link>
 			</nav>
 			<nav className="flex">
-			
 				<a href="/" className="w-8">
 					<SunIcon />
 				</a>
