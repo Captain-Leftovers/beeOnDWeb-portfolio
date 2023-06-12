@@ -1,11 +1,11 @@
-import { JSSVG, TreeSVG } from '@/components/Icons'
+import Image from "next/image";
+import js from '#/javascript.png'
 
 export default function SkillsTree() {
 	return (
 		<div className="mt-10 w-full flex items-center justify-center">
-			<div className='relative  bg-green-900'>
-				<TreeSVG className="w-[70vh]" />
-                <JSSVG className='absolute top-14 left-28 w-10' />
+			<div className='w-40'>
+			 <Image src={js} alt="javascript" />
 			</div>
 		</div>
 	)

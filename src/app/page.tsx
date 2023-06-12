@@ -13,6 +13,7 @@ export default function Home() {
 			<div className="flex items-center justify-center w-full mt-4">
 				<a download href='/resume.pdf'  className="flex items-center p-2.5 px-6 border-2 border-solid rounded-md border-primary bg-primary font-semibold hover:bg-secondary">Resume</a>
 				<a className="flex items-center ml-4 p-2.5 px-6 border-2 border-solid rounded-md border-primary font-semibold bg-secondary ">Get in touch</a>
+			
 
 			</div>
 		</article>
@@ -22,3 +23,4 @@ export default function Home() {
 //TODO : make the page area with the same padding as the navigation
 //TODO : make the buttons maybe the same length or make the text in the buttons the same length or something
 //TODO : add contact href
+//TODO : add get in touch button hoover effect
