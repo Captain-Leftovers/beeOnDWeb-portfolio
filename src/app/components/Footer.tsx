@@ -13,7 +13,6 @@ export default function Footer() {
 				by&nbsp;
 				<span className=''>BeeOnDWeb</span>
 			</div>
-			{/* <Link href="/">Say hello</Link> */}
 		</footer>
 	)
 }

@@ -3,7 +3,7 @@ import { GithubIcon, LinkedInIcon, TwitterIcon } from '@/components/Icons'
 export default function FollowMe() {
 	return (
 		<section className="fixed flex items-center justify-center rotate-90 -right-10 top-1/2">
-			<div className="relative px-6 py-2 rounded-md bg-accent before:content-[''] before:w-10 before:h-[1px]  before:absolute before:-right-10 before:top-1/2  before:-translate-y-1/2 before:bg-text ">Find me on</div>
+			<div className="relative px-6 py-2 rounded-md bg-accent dark:bg-accent-dark before:content-[''] before:w-10 before:h-[1px]  before:absolute before:-right-10 before:top-1/2  before:-translate-y-1/2 before:bg-text dark:before:bg-text-dark ">Find me on</div>
             
 			<a
 				href="https://github.com/Captain-Leftovers"

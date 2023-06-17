@@ -3,8 +3,12 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { MoonIcon, SunIcon } from '@/components/Icons'
+import useThemeSwitcher from '@/hooks/useThemeSwitcher'
 
 export default function NavBar() {
+
+	const [mode , toggleTheme ]  = useThemeSwitcher( ) 
+
 	const pathname = usePathname()
 	return (
 		<header className="flex items-center justify-between w-full py-8 font-medium px-80 sticky top-0 z-50 ">
@@ -12,7 +16,7 @@ export default function NavBar() {
 				<Link href="/" className="relative mr-6 group">
 					Home
 					<span
-						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent group-hover:w-full transition-[width] ease duration-300 ${
+						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent dark:bg-accent-dark group-hover:w-full transition-[width] ease duration-300 ${
 							pathname === '/'
 								? 'w-full'
 								: 'w-0'
@@ -27,7 +31,7 @@ export default function NavBar() {
 				>
 					Learn about me
 					<span
-						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent group-hover:w-full transition-[width] ease duration-300 ${
+						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent dark:bg-accent-dark group-hover:w-full transition-[width] ease duration-300 ${
 							pathname === '/about'
 								? 'w-full'
 								: 'w-0'
@@ -42,7 +46,7 @@ export default function NavBar() {
 				>
 					Projects
 					<span
-						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent group-hover:w-full transition-[width] ease duration-300 ${
+						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent dark:bg-accent-dark group-hover:w-full transition-[width] ease duration-300 ${
 							pathname === '/projects'
 								? 'w-full'
 								: 'w-0'
@@ -53,9 +57,18 @@ export default function NavBar() {
 				</Link>
 			</nav>
 			<nav className="flex">
-				<a href="/" className="w-8">
+				<button  className="w-8" 
+					onClick={toggleTheme as ()=> void }
+
+					
+				>
+					{mode === 'dark' ? (
+						<MoonIcon />
+					) : (
+
 					<SunIcon />
-				</a>
+					)}
+				</button>
 			</nav>
 		</header>
 	)
