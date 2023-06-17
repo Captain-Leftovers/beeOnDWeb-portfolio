@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function page() {
 	return (
-		<main className="flex flex-col items-center justify-center grow px-80 ">
+		<main className="flex flex-col items-center justify-center grow w-full max-w-screen-2xl ">
 			<Introduction />
 			<Skills />
 		</main>

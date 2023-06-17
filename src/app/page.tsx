@@ -2,12 +2,12 @@ import { LaptopSVG } from "@/components/Icons";
 
 export default function Home() {
 	return (
-		<main className="flex items-center justify-between bg-background dark:bg-background-dark grow px-80">
-		<div className="w-1/2 ">
+		<main className="flex items-center justify-around  bg-background dark:bg-background-dark grow w-full max-w-screen-2xl">
+		<div className="w-1/2">
 			<LaptopSVG className="w-full h-auto" />
 		</div>
 
-		<article className="flex flex-col">
+		<article className="flex flex-col w-fit  ">
 			<h1 className="self-center text-4xl font-medium ">Hi there!</h1>
 			<p className="text-center ">I&apos;m <span className="text-2xl font-medium text-primary dark:text-primary-dark">Dob</span>,<br/> Full Stack Programmer and Web Developer,<br/> fusing cutting-edge technology with your visions.</p>
 			<div className="flex items-center justify-center w-full mt-4">
