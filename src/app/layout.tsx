@@ -23,7 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${mont.variable} font-sans flex flex-col min-h-screen items-center dark:bg-background-dark bg-background dark:text-text-dark text-text`}
+				className={`${mont.variable} font-sans flex flex-col min-h-screen items-center dark:bg-background-dark bg-background dark:text-text-dark text-text px-20`}
 			>
 				<FollowMe />
 				<HireMe />
@@ -34,3 +34,5 @@ export default function RootLayout({
 		</html>
 	)
 }
+
+//TODO : add arrow to indicate there is content down the page or some other thing to indicate there is more content down the page

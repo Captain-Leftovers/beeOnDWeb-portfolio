@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
 	return (
-		<footer className='relative z-10 flex justify-between py-2 max-w-screen-2xl w-full '>
+		<footer className='relative z-10 flex justify-between py-2 max-w-screen-xl w-full '>
 			<span>
 				{new Date().getFullYear()} &copy; All Rights
 				Reserved
