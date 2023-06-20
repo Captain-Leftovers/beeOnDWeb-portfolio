@@ -6,9 +6,9 @@
 /* TODO remove debbugging outline when not needed */
 
 
-*:focus {
-  outline: 2px dashed rgb(0, 17, 255);
-}
+/* *:focus {
+  outline: 2px dashed rgb(98, 100, 120);
+} */
 
 /* *:hover {
   outline: 2px dashed rgb(255, 0, 0);
@@ -20,6 +20,7 @@
 
 
 /* TODO ^ remove debbugging outline when not needed */
+
 
 * {
 	box-sizing: border-box;

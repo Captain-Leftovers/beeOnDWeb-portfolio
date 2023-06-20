@@ -15,42 +15,56 @@ module.exports = {
 			colors: {
 				text: {
 					DEFAULT: '#220701',
-					dark: '#fafafa',
+					dark: '#cefdda',
 				},
 				background: {
 					DEFAULT: '#fff7f5',
-					dark: '#0b090b',
+					dark: '#02220a',
 				},
 				primary: {
 					DEFAULT: '#8e76f9',
-					dark: '#73806f',
+					dark: '#067a5d',
 				},
 				secondary: {
 					DEFAULT: '#d6f6d5',
-					dark: '#000000',
+					dark: '#000405',
 				},
 				accent: {
 					DEFAULT: '#76f98e',
-					dark: '#41062c',
-				},
-			
-
-				}
-			},
-			animation: {
-				'spin-slower':
-					'spin-reversed 14s linear infinite',
-			},
-			keyframes: {
-				'spin-reversed': {
-					'0%': { transform: 'rotate(0deg)' },
-					'100%': {
-						transform: 'rotate(-360deg)',
-					},
+					dark: '#065d7a',
 				},
 			},
 		},
-	}
+		animation: {
+			'spin-slower': 'spin-reversed 14s linear infinite',
+			'spin-one': 'spin-big-small 3s ease-in-out  forwards ',
+			'spin-two': 'spin-small-big 3s ease-in-out  forwards ',
+		},
+		keyframes: {
+			'spin-reversed': {
+				'0%': { transform: 'rotate(0deg)' },
+				'100%': {
+					transform: 'rotate(-360deg)',
+				},
+			},
+			'spin-big-small': {
+				'0%': { transform: 'rotate(0deg) scale(1) ' },
+				
+				'100%': {
+					transform: 'rotate(90deg) scale(0.2) ',
+				},
+			},
+			'spin-small-big': {
+				'0%': { transform: 'rotate(0deg) scale(0.2)  ' },
+				
+				'100%': {
+					transform: 'rotate(45deg) scale(1) translate(50%, -60%) ',
+				},
+			},
+			
+		},
+	},
+}
 
 // 'text': '#fbeedf',
 // 'background': '#170d03',

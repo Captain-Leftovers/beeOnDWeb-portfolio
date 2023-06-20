@@ -16,9 +16,7 @@ export default function Projects() {
 			</div>
 
 			<BigProjCard />
-			<BigProjCard />
-			<BigProjCard />
-			<BigProjCard />
+			
 		</main>
 	)
 }
