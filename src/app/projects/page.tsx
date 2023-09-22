@@ -1,4 +1,6 @@
 import BigProjCard from './components/BigProjCard'
+import beeLogLaptop from '#/laptopBeeLog.png'
+
 
 export const metadata = {
 	title: 'Projects',
@@ -15,7 +17,24 @@ export default function Projects() {
 				</h1>
 			</div>
 
-			<BigProjCard />
+			<BigProjCard 
+			buildWith='Build with : React, Typescript, Prisma, TRPC'  
+			name='BeeKeeper&apos;s Log'
+			description={['Track hive health','Store information about your hive inspections']}
+			imageSrc={beeLogLaptop}
+			/>
+				<BigProjCard 
+			buildWith='Build with : React, Typescript, Prisma, TRPC'  
+			name='BeeKeeper&apos;s Log'
+			description={['Track hive health','Store information about your hive inspections']}
+			imageSrc={beeLogLaptop}
+			/>
+			<BigProjCard 
+			buildWith='Build with : React, Typescript, Prisma, TRPC'  
+			name='BeeKeeper&apos;s Log'
+			description={['Track hive health','Store information about your hive inspections']}
+			imageSrc={beeLogLaptop}
+			/>
 			
 		</main>
 	)

@@ -1,33 +1,40 @@
-import Image from 'next/image'
-import laptop from '#/laptopBeeLog.png'
-import pinkNoise from '#/pink-circle.png'
+import Image, { StaticImageData } from 'next/image'
+import blueNoise from '#/blue-circle.png'
 import { GithubIcon } from '@/components/Icons'
 
-export default function BigProjCard() {
-	return (
-		<div className="w-2/3">
-			<div className=" w-full max-w-screen-lg mx-auto aspect-video flex relative rounded-lg   group">
-				<div className="absolute top-0 left-0 translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl  shadow-transparent rounded-full transition duration-500 group-hover:shadow-accent -z-50">
-					<Image alt="grain" src={pinkNoise} />
-				</div>
-			
+type BigProjCardProps = {
+	buildWith: string
+	name: string
+	description: string[]
+	imageSrc: StaticImageData
+}
 
-				<span className="absolute"></span>
+export default function BigProjCard({
+	buildWith,
+	name,
+	description,
+	imageSrc,
+}: BigProjCardProps) {
+	return (
+		<div className="w-[750px] h-auto group">
+			<div className=" w-full  mx-auto aspect-video flex relative rounded-lg outline outline-transparent outline-1 group-hover:outline-accent">
+				<div className="w-3/5 absolute top-0 left-0 translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl scale-100  shadow-transparent rounded-full transition duration-500 -z-30">
+					<Image alt="grain" src={blueNoise} className="" />
+				</div>
+
 				<div className=" w-1/2  flex flex-col justify-center pl-8 gap-6 ">
 					<h2 className="text-2xl text-text/70 dark:text-text-dark/80">
-						Build with : React, Typescript,
-						Prisma, TRPC
+						{buildWith}
 					</h2>
-					<h1 className="text-4xl">
-						BeeKeeper&apos;s Log
-					</h1>
+					<h1 className="text-4xl">{name}</h1>
 					<section className="text-text/70 dark:text-text-dark/80">
-						<p>Track hive health</p>
-						<p>
-							Store information
-							related to hive
-							inspection
-						</p>
+						<ul>
+							{description.map((desc) => (
+								<li key={desc}>
+									<p>{desc}</p>
+								</li>
+							))}
+						</ul>
 					</section>
 
 					<div className="flex gap-4 items-center">
@@ -39,7 +46,6 @@ export default function BigProjCard() {
 							<GithubIcon className="" />
 						</a>
 						<a
-							
 							href="https://beekeeperslog.com"
 							target="_blank"
 							className="shadow-md w-40 flex items-center justify-center p-2.5 px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-semibold hover:bg-transparent dark:hover:bg-transparent"
@@ -51,9 +57,9 @@ export default function BigProjCard() {
 				<div className="absolute -right-20 -bottom-20 w-2/3">
 					<picture className="">
 						<Image
-							loading='eager'
+							loading="eager"
 							className=""
-							src={laptop}
+							src={imageSrc}
 							alt="laptop"
 						/>
 					</picture>
