@@ -15,23 +15,23 @@ module.exports = {
 			colors: {
 				text: {
 					DEFAULT: '#220701',
-					dark: '#cefdda',
+					dark: '#f5f5f5',
 				},
 				background: {
 					DEFAULT: '#fff7f5',
-					dark: '#02220a',
+					dark: '#121211',
 				},
 				primary: {
 					DEFAULT: '#8e76f9',
-					dark: '#067a5d',
+					dark: '#484b4a',
 				},
 				secondary: {
 					DEFAULT: '#d6f6d5',
-					dark: '#000405',
+					dark: '#121112',
 				},
 				accent: {
 					DEFAULT: '#76f98e',
-					dark: '#065d7a',
+					dark: '#7a7577',
 				},
 			},
 		},

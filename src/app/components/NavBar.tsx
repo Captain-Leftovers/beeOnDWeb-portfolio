@@ -11,7 +11,7 @@ export default function NavBar() {
 
 	const pathname = usePathname()
 	return (
-		<header className="flex items-center justify-between max-w-screen-xl  w-full  py-8 font-medium  sticky top-0 z-50">
+		<header className="bg-background dark:bg-background-dark bg-opacity-95 flex items-center justify-between max-w-screen-xl  w-full  py-8 font-medium  sticky top-0 z-50 ">
 			<nav className="">
 				<Link href="/" className="relative mr-6 group">
 					Home
