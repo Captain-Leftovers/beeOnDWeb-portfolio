@@ -7,7 +7,7 @@ export default function BigProjCard() {
 	return (
 		<div className="w-2/3">
 			<div className=" w-full max-w-screen-lg mx-auto aspect-video flex relative rounded-lg   group">
-				<div className="absolute top-0 left-0 translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl  shadow-transparent rounded-full transition duration-500 group-hover:shadow-accent">
+				<div className="absolute top-0 left-0 translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl  shadow-transparent rounded-full transition duration-500 group-hover:shadow-accent -z-50">
 					<Image alt="grain" src={pinkNoise} />
 				</div>
 			
@@ -51,6 +51,7 @@ export default function BigProjCard() {
 				<div className="absolute -right-20 -bottom-20 w-2/3">
 					<picture className="">
 						<Image
+							loading='eager'
 							className=""
 							src={laptop}
 							alt="laptop"
