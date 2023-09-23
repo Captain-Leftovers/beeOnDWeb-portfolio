@@ -38,6 +38,9 @@ export default function Projects() {
 			
 
 			/>
+
+	//TODO : add all projects and link and maybe see the order
+
 			<BigProjCard 
 			buildWith='Build with : React, Typescript, Prisma, TRPC'  
 			name='BeeKeeper&apos;s Log'

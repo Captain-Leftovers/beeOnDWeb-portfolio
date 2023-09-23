@@ -17,7 +17,7 @@ export default function SkillsTree() {
 	console.log();
 	
 	return (
-		<div className="my-10 w-full grid gap-6 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+		<div className="my-10 w-full grid gap-6 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2 grid-cols-2">
 			<SkillCard svgIcon={<HtmlSVG/>} text='HTML'/>
 			<SkillCard svgIcon={<CssSVG/>} text='CSS'/>
 			<SkillCard svgIcon={<TailwindSVG/>} text='Tailwind CSS'/>

@@ -3,10 +3,11 @@ import myPhoto from '#/one.png'
 
 export default function PersonalPhotoCard() {
 	return (
-		<div className=" relative  w-full min-h-[400px]">
+		<div className="sm:basis-1/2 relative  w-full min-h-[400px]">
 			<Image
 				src={myPhoto}
 				alt="myPhoto"
+				loading='eager'
 				fill
 				style={{ objectFit: 'contain' }}
 			/>
