@@ -27,8 +27,10 @@ export default function RootLayout({
 			>
 				<NavBar />
 				{children}
-				<HireMe />
-				<FollowMe />
+				<div className='flex flex-col gap-4'>
+					<HireMe />
+					<FollowMe />
+				</div>
 				<Footer />
 			</body>
 		</html>

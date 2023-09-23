@@ -10,9 +10,9 @@ export const metadata = {
 
 export default function Projects() {
 	return (
-		<main className="flex flex-col items-center justify-center grow w-full max-w-screen-xl    gap-28 ">
-			<div>
-				<h1 className="text-6xl font-medium max-w-screen-lg text-center mt-10 ">
+		<main className="w-full xl:max-w-screen-xl space-y-28 py-10">
+			<div className='w-full'>
+				<h1 className="text-2xl mx-auto p-4 sm:text-6xl text-center font-medium xl:max-w-screen-lg ">
 					Exploring the intersection of technology
 					and creativity.
 				</h1>
@@ -24,7 +24,6 @@ export default function Projects() {
 			description={['Track hive health','Store information about your hive inspections']}
 			imageSrc={mySpotLaptop}
 			cardColor='bg-blue-100'
-
 			githubLink='https://github.com/Captain-Leftovers/my-spot'
 			liveLink='https://my-spot.vercel.app/'
 			/>
