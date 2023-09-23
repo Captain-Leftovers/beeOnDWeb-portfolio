@@ -1,12 +1,35 @@
-import Image from "next/image";
-import js from '#/javascript.png'
+import SkillCard from "./SkillCard"
+import NextJsSVG from "./NextJsSVG";
+import CssSVG from "./CssSVG"
+import JavaScriptSVG from "./JavaScriptSVG"
+import HtmlSVG from "./HtmlSVG"
+import ReactSVG from "./ReactSVG"
+import TypeScriptSVG from "./TypeScriptSVG";
+import TrpcSVG from "./TrpcSVG";
+import SqlSVG from "./SqlSVG";
+import PrismaSVG from "./PrismaSVG";
+import TailwindSVG from "./TailwindSVG";
+import GitSVG from "./GitSVG";
+import NodJsSVG from "./NodeJsSVG";
+
 
 export default function SkillsTree() {
+	console.log();
+	
 	return (
-		<div className="mt-10 w-full flex items-center justify-center">
-			<div className='w-40'>
-			 <Image src={js} alt="javascript" />
-			</div>
+		<div className="my-10 w-full grid gap-10 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+			<SkillCard svgIcon={<HtmlSVG/>} text='HTML'/>
+			<SkillCard svgIcon={<CssSVG/>} text='CSS'/>
+			<SkillCard svgIcon={<TailwindSVG/>} text='Tailwind CSS'/>
+			<SkillCard svgIcon={<JavaScriptSVG/>} text='JavaScript'/>
+			<SkillCard svgIcon={<TypeScriptSVG/>} text='TypeScript'/>
+			<SkillCard svgIcon={<ReactSVG/>} text='React'/>
+			<SkillCard svgIcon={<NextJsSVG/>} text='Next JS'/>
+			<SkillCard svgIcon={<TrpcSVG/>} text='TRPC'/>
+			<SkillCard svgIcon={<PrismaSVG/>} text='Prisma'/>
+			<SkillCard svgIcon={<SqlSVG/>} text='SQL'/>
+			<SkillCard svgIcon={<GitSVG/>} text='GIT'/>
+			<SkillCard svgIcon={<NodJsSVG/>} text='Node JS'/>
 		</div>
 	)
 }

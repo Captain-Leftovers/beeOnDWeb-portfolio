@@ -23,12 +23,12 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${mont.variable} font-sans flex flex-col min-h-screen items-center dark:bg-background-dark bg-background dark:text-text-dark text-text px-20  `}
+				className={`${mont.variable} font-sans flex flex-col min-h-screen items-center dark:bg-background-dark bg-background dark:text-text-dark text-text lg:px-20  `}
 			>
-				<FollowMe />
-				<HireMe />
 				<NavBar />
 				{children}
+				<HireMe />
+				<FollowMe />
 				<Footer />
 			</body>
 		</html>

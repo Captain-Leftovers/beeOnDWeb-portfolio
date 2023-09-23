@@ -36,26 +36,32 @@ module.exports = {
 			},
 		},
 		animation: {
+			'spin-slower': 'spin-reversed 14s linear infinite',
 			'spin-one': 'spin-big-small 3s ease-in-out  forwards ',
 			'spin-two': 'spin-small-big 3s ease-in-out  forwards ',
 		},
 		keyframes: {
-	
-			
+			'spin-reversed': {
+				'0%': { transform: 'rotate(0deg)' },
+				'100%': {
+					transform: 'rotate(-360deg)',
+				},
+			},
 			'spin-big-small': {
 				'0%': { transform: 'rotate(0deg) scale(1) ' },
-
+				
 				'100%': {
 					transform: 'rotate(90deg) scale(0.2) ',
 				},
 			},
 			'spin-small-big': {
 				'0%': { transform: 'rotate(0deg) scale(0.2)  ' },
-
+				
 				'100%': {
-					transform: 'rotate(45deg) scale(1) translate(55%, -55%) ',
+					transform: 'rotate(45deg) scale(1) translate(50%, -60%) ',
 				},
 			},
+			
 		},
 	},
 }

@@ -3,7 +3,7 @@ import myPhoto from '#/one.png'
 
 export default function PersonalPhotoCard() {
 	return (
-		<div className=" relative  w-1/2">
+		<div className=" relative  w-full min-h-[200px] border">
 			<Image
 				src={myPhoto}
 				alt="myPhoto"

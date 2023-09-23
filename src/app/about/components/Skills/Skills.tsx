@@ -9,3 +9,4 @@ export default function Skills() {
 		</section>
 	)
 }
+//TODO : add skills component maybe and add techs you use!!!!
