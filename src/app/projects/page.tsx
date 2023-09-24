@@ -1,6 +1,8 @@
 import BigProjCard from './components/BigProjCard'
 import beeLogLaptop from '#/laptopBeeLog.png'
 import mySpotLaptop from '#/laptopMySpot.png'
+import laptopEcommerce from '#/laptopEcommerce.png'
+import laptopAdminDash from '#/laptopAdminDash.png'
 
 export const metadata = {
 	title: 'Projects',
@@ -17,11 +19,12 @@ export default function Projects() {
 			</div>
 
 			<BigProjCard
-				buildWith="Build with : React, Typescript, Prisma, TRPC"
-				name="BeeKeeper's Log"
+				buildWith="Build with : React, Tailwind, Supabase, PostgreSQL, Stripe"
+				name="My Spot"
 				description={[
-					'Track hive health',
-					'Store information about your hive inspections',
+					'Upload Songs',
+					'Listen to songs',
+					'Monthly Subscription',
 				]}
 				imageSrc={mySpotLaptop}
 				cardColor="bg-blue-100"
@@ -29,15 +32,30 @@ export default function Projects() {
 				liveLink="https://my-spot.vercel.app/"
 			/>
 			<BigProjCard
-				buildWith="Build with : React, Typescript, Prisma, TRPC"
-				name="BeeKeeper's Log"
+				buildWith="Build with : Next.js 13, React, Tailwind, Prisma"
+				name="Art Eccomerce"
 				description={[
-					'Track hive health',
-					'Store information about your hive inspections',
+					'Browse and buy art',
+					'Search for art by category',
 				]}
-				imageSrc={beeLogLaptop}
-				githubLink=""
+				imageSrc={laptopEcommerce}
+				githubLink="https://github.com/Captain-Leftovers/Ecommerce-Store"
 				cardColor="bg-green-100  dark:bg-amber-100"
+				liveLink="https://ecommerce-store-six-plum.vercel.app/"
+			/>
+
+			<BigProjCard
+				buildWith="Build with : Next.js 13, React, Tailwind, Prisma, MySQL"
+				name="Admin Dashboard for Ecommerce"
+				description={[
+					'Control mulitple vendors / stores through this single CMS',
+					'Generate API routes for all your stores',
+					'See graphs of your revenue',
+				]}
+				imageSrc={laptopAdminDash}
+				githubLink="https://github.com/Captain-Leftovers/ecommerce-admin-dashboard"
+				cardColor="bg-amber-100  dark:bg-amber-200"
+				liveLink="https://ecommerce-admin-dashboard-wheat.vercel.app/"
 			/>
 
 			<BigProjCard
@@ -48,7 +66,7 @@ export default function Projects() {
 					'Store information about your hive inspections',
 				]}
 				imageSrc={beeLogLaptop}
-				cardColor="bg-amber-100  dark:bg-amber-200"
+				cardColor="bg-blue-100"
 				githubLink="https://github.com/Captain-Leftovers/Captain-Leftovers-bee-log-react-trpc-prisma-postgresql-"
 				liveLink="https://beekeeperslog.com"
 			/>
@@ -57,5 +75,6 @@ export default function Projects() {
 }
 
 //TODO : add all projects and link and maybe see the order
-
 //TODO : add all projects and hotos
+//TODO :  add maybe phone mockup and tablet mockup !!! from figma
+//TODO :  set the correct buildWith and info to each project for now they are not correct
