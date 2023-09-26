@@ -48,9 +48,8 @@ export default function Projects() {
 				buildWith="Build with : Next.js 13, React, Tailwind, Prisma, MySQL"
 				name="Admin Dashboard for Ecommerce"
 				description={[
-					'Control mulitple vendors / stores through this single CMS',
-					'Generate API routes for all your stores',
-					'See graphs of your revenue',
+					'Control multiple stores through this single CMS',
+				
 				]}
 				imageSrc={laptopAdminDash}
 				githubLink="https://github.com/Captain-Leftovers/ecommerce-admin-dashboard"

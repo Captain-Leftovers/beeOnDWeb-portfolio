@@ -1,6 +1,6 @@
 export default function AboutMe() {
 	return (
-		<div className="sm:basis-1/2 flex flex-col justify-center">
+		<div className="sm:basis-1/2 flex flex-col justify-center px-4">
 			<h1 className="text-4xl font-medium text-center sm:text-start">About Me</h1>
 			<p className="mt-4 text-xl">
 				Hello! I&apos;m Dob, a self-taught Full Stack

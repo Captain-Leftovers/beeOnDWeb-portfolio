@@ -19,29 +19,37 @@ export default function BigProjCard({
 	imageSrc,
 	cardColor = 'bg-green-100',
 	githubLink,
-	liveLink
+	liveLink,
 }: BigProjCardProps) {
 	return (
-		<div className="md:w-[750px] w-[360px] mx-auto h-auto group ">
-			<div className={`w-full  mx-auto aspect-video flex relative rounded-lg outline outline-transparent outline-1 group-hover:outline-accent ${cardColor} dark:bg-opacity-40`}>
+		<div className="md:w-[750px] w-[360px] mx-auto h-auto group">
+			<div
+				className={`w-full  mx-auto aspect-video flex relative rounded-lg outline outline-transparent outline-1 group-hover:outline-accent ${cardColor} dark:bg-opacity-40`}
+			>
 				<div className="w-1/2 top-0 left-14 sm:w-3/5 absolute sm:top-0 sm:left-0 sm:translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl scale-100  shadow-transparent rounded-full transition duration-500">
-					<Image alt="grain" src={blueNoise} className="dark:opacity-60" />
+					<Image
+						alt="grain"
+						src={blueNoise}
+						className="dark:opacity-60"
+					/>
 				</div>
 
-				<div className="text-sm w-1/2  flex flex-col justify-center pl-8 gap-1 sm:gap-6 z-20">
-					<h2 className="text-md sm:text-2xl text-text/70 dark:text-text-dark/80">
-						{buildWith}
-					</h2>
-					<h1 className="text-lg sm:text-4xl">{name}</h1>
-					<section className="text-text/70 dark:text-text-dark/80">
-						<ul>
-							{description.map((desc) => (
-								<li key={desc}>
-									<p>{desc}</p>
-								</li>
-							))}
-						</ul>
-					</section>
+				<div className="text-sm w-1/2  flex flex-col justify-between pl-8 z-20 py-2">
+					<div className='my-auto sm:space-y-4' >
+						<h2 className="text-sm sm:text-2xl text-text/70 dark:text-text-dark/80">
+							{buildWith}
+						</h2>
+						<h1 className="text-lg sm:text-4xl">{name}</h1>
+						<section className="text-text/70 dark:text-text-dark/80 text-xs sm:text-base">
+							<ul>
+								{description.map((desc) => (
+									<li key={desc}>
+										<p>{desc}</p>
+									</li>
+								))}
+							</ul>
+						</section>
+					</div>
 
 					<div className="flex gap-2 sm:gap-4 items-center">
 						<a
