@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
 	return (
-		<footer className='text-sm sm:text-md lg:text-lg  relative z-10 flex justify-between items-center p-2 max-w-screen-xl w-full '>
+		<footer className=' text-sm sm:text-md lg:text-lg  relative z-10 flex justify-around items-center p-2 max-w-screen-xl w-full '>
 			<span>
 				{new Date().getFullYear()} &copy; All Rights
 				Reserved
