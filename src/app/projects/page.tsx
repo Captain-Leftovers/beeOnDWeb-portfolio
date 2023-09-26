@@ -46,7 +46,7 @@ export default function Projects() {
 
 			<BigProjCard
 				buildWith="Build with : Next.js 13, React, Tailwind, Prisma, MySQL"
-				name="Admin Dashboard for Ecommerce"
+				name="Admin Dashboard"
 				description={[
 					'Control multiple stores through this single CMS',
 				
