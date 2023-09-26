@@ -49,7 +49,6 @@ export default function Projects() {
 				name="Admin Dashboard"
 				description={[
 					'Control multiple stores through this single CMS',
-				
 				]}
 				imageSrc={laptopAdminDash}
 				githubLink="https://github.com/Captain-Leftovers/ecommerce-admin-dashboard"

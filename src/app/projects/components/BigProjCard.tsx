@@ -39,7 +39,7 @@ export default function BigProjCard({
 						<h2 className="text-sm sm:text-2xl text-text/70 dark:text-text-dark/80">
 							{buildWith}
 						</h2>
-						<h1 className="text-lg sm:text-4xl">{name}</h1>
+						<h1 className="text-lg sm:text-4xl leading-4" >{name}</h1>
 						<section className="text-text/70 dark:text-text-dark/80 text-xs sm:text-base">
 							<ul>
 								{description.map((desc) => (
