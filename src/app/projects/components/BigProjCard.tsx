@@ -35,11 +35,13 @@ export default function BigProjCard({
 				</div>
 
 				<div className="text-sm w-1/2  flex flex-col justify-between pl-8 z-20 py-2">
-					<div className='my-auto sm:space-y-4' >
+					<div className="my-auto sm:space-y-4 space-y-1">
 						<h2 className="text-sm sm:text-2xl text-text/70 dark:text-text-dark/80">
 							{buildWith}
 						</h2>
-						<h1 className="text-lg sm:text-4xl leading-4" >{name}</h1>
+						<h1 className="text-lg sm:text-4xl leading-5">
+							{name}
+						</h1>
 						<section className="text-text/70 dark:text-text-dark/80 text-xs sm:text-base">
 							<ul>
 								{description.map((desc) => (
