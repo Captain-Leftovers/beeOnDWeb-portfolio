@@ -10,6 +10,8 @@ export default function PersonalPhotoCard() {
 				loading='eager'
 				fill
 				style={{ objectFit: 'contain' }}
+				priority
+				
 			/>
 		</div>
 	)

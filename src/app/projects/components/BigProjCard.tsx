@@ -10,6 +10,8 @@ type BigProjCardProps = {
 	cardColor?: string
 	githubLink: string
 	liveLink?: string
+	loading?: 'lazy' | 'eager'
+	priority?: boolean
 }
 
 export default function BigProjCard({
@@ -20,6 +22,8 @@ export default function BigProjCard({
 	cardColor = 'bg-green-100',
 	githubLink,
 	liveLink,
+	loading,
+	priority,
 }: BigProjCardProps) {
 	return (
 		<div className="md:w-[750px] w-[360px] mx-auto h-auto group">
@@ -28,6 +32,8 @@ export default function BigProjCard({
 			>
 				<div className="w-1/2 top-0 left-14 sm:w-3/5 absolute sm:top-0 sm:left-0 sm:translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl scale-100  shadow-transparent rounded-full transition duration-500">
 					<Image
+						loading={loading}
+						priority={priority}
 						alt="grain"
 						src={blueNoise}
 						className="dark:opacity-60"

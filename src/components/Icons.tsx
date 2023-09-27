@@ -460,7 +460,7 @@ export const CircularText = ({ className, ...rest }: Props) => (
 	</svg>
 )
 
-//TODO make hire me round text capitaliszed
+
 
 export const LinkArrow = ({ className, ...rest }: Props) => (
 	<svg

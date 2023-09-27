@@ -34,6 +34,3 @@ export default function SkillsTree() {
 	)
 }
 
-//TODO : maybe put lights on top of the art frames for skills that shine light on the art frames and put labels below
-
-//TODO : make art frame for skills and display them if you cant just use photos i guess midjourney can create photos with ?JS logo maybe

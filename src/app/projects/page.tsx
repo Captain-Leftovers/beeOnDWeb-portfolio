@@ -30,6 +30,8 @@ export default function Projects() {
 				cardColor="bg-blue-100"
 				githubLink="https://github.com/Captain-Leftovers/my-spot"
 				liveLink="https://my-spot.vercel.app/"
+				loading='eager'
+				priority={true}
 			/>
 			<BigProjCard
 				buildWith="Build with : Next.js 13, React, Tailwind, Prisma"
@@ -61,7 +63,7 @@ export default function Projects() {
 				name="BeeKeeper's Log"
 				description={[
 					'Track hive health',
-					'Store information about your hive inspections',
+					'Store inspection logs',
 				]}
 				imageSrc={beeLogLaptop}
 				cardColor="bg-blue-100"

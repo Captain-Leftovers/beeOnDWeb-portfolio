@@ -12,4 +12,3 @@ export default function Introduction() {
 	)
 }
 
-//TODO :  fix tablet and mobile view photo not sitting on bottom

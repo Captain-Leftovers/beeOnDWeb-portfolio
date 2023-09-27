@@ -19,7 +19,7 @@ export default function NavBar() {
 					</span>
 				</Link>
 				<Link href="/about" className="relative mr-6 group">
-					Learn about me
+					About Me
 					<span
 						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent dark:bg-accent-dark group-hover:w-full transition-[width] ease duration-300 ${
 							pathname === '/about' ? 'w-full' : 'w-0'
@@ -28,11 +28,21 @@ export default function NavBar() {
 						&nbsp;
 					</span>
 				</Link>
-				<Link href="/projects" className="relative group">
+				<Link href="/projects" className="relative mr-6 group">
 					Projects
 					<span
 						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent dark:bg-accent-dark group-hover:w-full transition-[width] ease duration-300 ${
 							pathname === '/projects' ? 'w-full' : 'w-0'
+						} `}
+					>
+						&nbsp;
+					</span>
+				</Link>
+				<Link href="/contact" className="relative group">
+					Contact
+					<span
+						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent dark:bg-accent-dark group-hover:w-full transition-[width] ease duration-300 ${
+							pathname === '/contact' ? 'w-full' : 'w-0'
 						} `}
 					>
 						&nbsp;
