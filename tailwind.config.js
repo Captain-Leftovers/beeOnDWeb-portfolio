@@ -39,6 +39,7 @@ module.exports = {
 			'spin-slower': 'spin-reversed 14s linear infinite',
 			'spin-one': 'spin-big-small 3s ease-in-out  forwards ',
 			'spin-two': 'spin-small-big 3s ease-in-out  forwards ',
+			'fade-in-out': 'fade-in-out 1.5s ease-out  forwards ',
 		},
 		keyframes: {
 			'spin-reversed': {
@@ -60,6 +61,11 @@ module.exports = {
 				'100%': {
 					transform: 'rotate(45deg) scale(1) translate(50%, -60%) ',
 				},
+			},
+			'fade-in-out': {
+				'0%': { opacity: '0' },
+				'50%': { opacity: '1' },
+				'100%': { opacity: '0' },
 			},
 			
 		},

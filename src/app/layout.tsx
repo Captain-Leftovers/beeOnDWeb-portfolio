@@ -4,6 +4,7 @@ import HireMe from './components/HireMe'
 import NavBar from './components/NavBar'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
+import { Toaster } from 'react-hot-toast'
 
 const mont = Montserrat({
 	subsets: ['latin'],
@@ -25,9 +26,10 @@ export default function RootLayout({
 			<body
 				className={`${mont.variable} font-sans flex flex-col min-h-screen items-center dark:bg-background-dark bg-background dark:text-text-dark text-text lg:px-20  `}
 			>
+				<Toaster />
 				<NavBar />
 				{children}
-				<div className='flex flex-col gap-4'>
+				<div className="flex flex-col gap-4">
 					<HireMe />
 					<FollowMe />
 				</div>

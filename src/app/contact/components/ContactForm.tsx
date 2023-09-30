@@ -48,6 +48,12 @@ export default function ContactForm() {
 							className="border py-2 px-3 text-text rounded-md  bg-background-dark/50"
 						/>
 					</div>
+					<button
+						type="submit"
+						className="bg-primary text-text py-2 px-4 rounded-md"
+					>
+						Send
+					</button>
 				</div>
 			</form>
 		</div>
