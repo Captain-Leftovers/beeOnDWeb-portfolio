@@ -19,7 +19,7 @@ module.exports = {
 				},
 				background: {
 					DEFAULT: '#fff7f5',
-					dark: '#121211',
+					dark: '#fceede',
 				},
 				primary: {
 					DEFAULT: '#8e76f9',
