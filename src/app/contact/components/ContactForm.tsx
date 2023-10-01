@@ -1,4 +1,14 @@
+'use client'
+
+import { useState } from 'react'
+
 export default function ContactForm() {
+	const [blurred, setBlurred] = useState<boolean>(false)
+
+	const handleOnBlur = () => {
+		setBlurred(true)
+	}
+
 	return (
 		<div className="flex-1 px-4">
 			<form>
@@ -15,8 +25,19 @@ export default function ContactForm() {
 							name="name"
 							id="name"
 							placeholder="Your name"
-							className="border py-2 px-3 text-text bg-background-dark/50 rounded-md"
+							onBlur={handleOnBlur}
+							required = {true}
+							pattern='^[a-zA-Z ]{3,30}$'
+							className=" py-2 px-3 text-text bg-background-dark/50 rounded-md peer border-2 border-gray-200  p-2  focus:border-accent focus:outline-none hover:border-two transition-colors duration-500 ease-in-out"
+
 						/>
+						<span
+							className={` text-red-500 text-xs opacity-0 pl-1 ${
+								blurred ? 'opacity-100' : ''
+							}  peer-valid:opacity-0`}
+						>
+							{/* TODO add error messages */}
+						</span>
 					</div>
 					<div className="flex flex-col mb-4">
 						<label
