@@ -1,9 +1,41 @@
 'use client'
 
 import { useState } from 'react'
+import toast from 'react-hot-toast'
+
+const initialState = {
+	name: '',
+	email: '',
+	message: '',
+}
 
 export default function ContactForm() {
 	const [blurred, setBlurred] = useState<boolean>(false)
+	const [data, setData] = useState(initialState)
+
+	const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault()
+		try {
+			const response = await fetch('/api/send', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(data),
+			})
+			if (response.ok) {
+
+				setData(initialState)
+				
+				toast.success(`Hey ${data.name}, your message was sent successfully!`)
+				
+			}
+		} catch (error) {
+			console.log(error);
+			
+			toast.error(`Hey ${data.name}, something went wrong!`)
+		}
+	}
 
 	const handleOnBlur = () => {
 		setBlurred(true)
@@ -11,7 +43,7 @@ export default function ContactForm() {
 
 	return (
 		<div className="flex-1 px-4">
-			<form>
+			<form onSubmit={sendEmail}>
 				<div className="text-lg">
 					<div className="flex flex-col mb-4">
 						<label
@@ -21,22 +53,25 @@ export default function ContactForm() {
 							Name
 						</label>
 						<input
+							onChange={(e) =>{
+								setData({...data, name: e.target.value})
+							}
+							}
 							type="text"
 							name="name"
 							id="name"
 							placeholder="Your name"
 							onBlur={handleOnBlur}
-							required = {true}
-							pattern='^[a-zA-Z ]{3,30}$'
+							required={true}
+							pattern="^[\p{L}\-' ]+$"
 							className=" py-2 px-3 text-text bg-background-dark/50 rounded-md peer border-2 border-gray-200  p-2  focus:border-accent focus:outline-none hover:border-two transition-colors duration-500 ease-in-out"
-
 						/>
 						<span
 							className={` text-red-500 text-xs opacity-0 pl-1 ${
 								blurred ? 'opacity-100' : ''
 							}  peer-valid:opacity-0`}
 						>
-							{/* TODO add error messages */}
+							{'enter your name'}
 						</span>
 					</div>
 					<div className="flex flex-col mb-4">
@@ -47,12 +82,25 @@ export default function ContactForm() {
 							Email
 						</label>
 						<input
+						onChange={(e) =>{
+							setData({...data, email: e.target.value})
+						}}
 							type="text"
 							name="email"
 							id="email"
+							onBlur={handleOnBlur}
+							required={true}
+							pattern="[^@\s]+@[^@\s]+"
 							placeholder="Your email"
-							className="border py-2 px-3 text-text rounded-md  bg-background-dark/50"
+							className="py-2 px-3 text-text bg-background-dark/50 rounded-md peer border-2 border-gray-200  p-2  focus:border-accent focus:outline-none hover:border-two transition-colors duration-500 ease-in-out"
 						/>
+						<span
+							className={` text-red-500 text-xs opacity-0 pl-1 ${
+								blurred ? 'opacity-100' : ''
+							}  peer-valid:opacity-0`}
+						>
+							{'enter your email'}
+						</span>
 					</div>
 					<div className="flex flex-col mb-4">
 						<label
@@ -62,11 +110,15 @@ export default function ContactForm() {
 							Message
 						</label>
 						<textarea
+						onChange={(e) =>{
+							setData({...data, message: e.target.value})
+						}}
 							rows={10}
 							name="message"
+							required={true}
 							id="message"
 							placeholder="Say something..."
-							className="border py-2 px-3 text-text rounded-md  bg-background-dark/50"
+							className="py-2 px-3 text-text bg-background-dark/50 rounded-md peer border-2 border-gray-200  p-2  focus:border-accent focus:outline-none hover:border-two transition-colors duration-500 ease-in-out"
 						/>
 					</div>
 					<button
