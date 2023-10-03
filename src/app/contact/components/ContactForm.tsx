@@ -23,7 +23,7 @@ export default function ContactForm() {
 				},
 				body: JSON.stringify(data),
 			})
-			if (response.ok) {
+			if (response.status === 200) {
 
 				setData(initialState)
 				

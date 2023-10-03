@@ -6,7 +6,6 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 console.log("resend", resend);
 
 export async function POST(request: Request) {
-	try {
     const body = await request.json()
     console.log("body", body);
     const { name, email, message} = body
@@ -23,8 +22,5 @@ export async function POST(request: Request) {
     console.log("data", data);
     
 
-	} catch (error) {
-    console.log("error", error);
-    
-	}
+
 }
