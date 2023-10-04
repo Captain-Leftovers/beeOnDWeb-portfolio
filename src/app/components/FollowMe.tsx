@@ -1,4 +1,4 @@
-import { GithubIcon, LinkedInIcon, TwitterIcon } from '@/components/Icons'
+import { GithubIcon, LinkedInIcon, XSVG } from '@/components/Icons'
 
 export default function FollowMe() {
 	return (
@@ -23,11 +23,11 @@ export default function FollowMe() {
 			</a>
 
 			<a
-				href="https://twitter.com/BeeondwebIvanov"
+				href="https://twitter.com/lalilulelo_mg"
 				target="_blank"
 				className="w-8 mr-4  hover:scale-110 xl:-rotate-90"
 			>
-				<TwitterIcon />
+				<XSVG />
 			</a>
 		</section>
 	)

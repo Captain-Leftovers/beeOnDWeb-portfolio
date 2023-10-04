@@ -23,3 +23,4 @@ export default function Home() {
 
 
 //TODO add resume !!!
+//TODO : add page transition and fix icons of tech not showing on ios
