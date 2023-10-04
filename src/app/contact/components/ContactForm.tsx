@@ -12,10 +12,13 @@ const initialState = {
 export default function ContactForm() {
 	const [blurred, setBlurred] = useState<boolean>(false)
 	const [data, setData] = useState(initialState)
-
+	const [isLoading, setIsLoading] = useState<boolean>(false)
+	console.log(data);
+	
 	const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		try {
+			setIsLoading(true)
 			const response = await fetch('/api/send', {
 				method: 'POST',
 				headers: {
@@ -24,17 +27,18 @@ export default function ContactForm() {
 				body: JSON.stringify(data),
 			})
 			if (response.status === 200) {
-
 				setData(initialState)
-				
-				toast.success(`Hey ${data.name}, your message was sent successfully!`)
-				
+				setBlurred(false)
+				toast.success(
+					`Hey ${data.name}, your message was sent successfully!`
+				)
 			}
 		} catch (error) {
-			console.log(error);
-			
+			console.log(error)
+
 			toast.error(`Hey ${data.name}, something went wrong!`)
 		}
+		setIsLoading(false)
 	}
 
 	const handleOnBlur = () => {
@@ -43,7 +47,7 @@ export default function ContactForm() {
 
 	return (
 		<div className="flex-1 px-4">
-			<form onSubmit={sendEmail}>
+			<form onSubmit={sendEmail} >
 				<div className="text-lg">
 					<div className="flex flex-col mb-4">
 						<label
@@ -53,10 +57,10 @@ export default function ContactForm() {
 							Name
 						</label>
 						<input
-							onChange={(e) =>{
-								setData({...data, name: e.target.value})
-							}
-							}
+							onChange={(e) => {
+								setData({ ...data, name: e.target.value })
+							}}
+							value={data.name}
 							type="text"
 							name="name"
 							id="name"
@@ -82,10 +86,11 @@ export default function ContactForm() {
 							Email
 						</label>
 						<input
-						onChange={(e) =>{
-							setData({...data, email: e.target.value})
-						}}
+							onChange={(e) => {
+								setData({ ...data, email: e.target.value })
+							}}
 							type="text"
+							value={data.email}
 							name="email"
 							id="email"
 							onBlur={handleOnBlur}
@@ -110,10 +115,11 @@ export default function ContactForm() {
 							Message
 						</label>
 						<textarea
-						onChange={(e) =>{
-							setData({...data, message: e.target.value})
-						}}
+							onChange={(e) => {
+								setData({ ...data, message: e.target.value })
+							}}
 							rows={10}
+							value={data.message}
 							name="message"
 							required={true}
 							id="message"
@@ -122,8 +128,9 @@ export default function ContactForm() {
 						/>
 					</div>
 					<button
+						disabled = {isLoading}
 						type="submit"
-						className="bg-primary text-text py-2 px-4 rounded-md"
+						className="bg-primary text-text py-2 px-4 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
 					>
 						Send
 					</button>

@@ -53,4 +53,3 @@ export default function NavBar() {
 	)
 }
 
-//TODO : Add a hamburger menu for mobile devices or a dropdown menu or not at all maybe add logo

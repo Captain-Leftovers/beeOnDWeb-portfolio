@@ -12,4 +12,3 @@ export default function Footer() {
 	)
 }
 
-//TODO : Add a link to the contact page or email me directly check all other links in footer

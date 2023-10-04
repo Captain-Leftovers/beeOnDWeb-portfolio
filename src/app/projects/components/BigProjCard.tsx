@@ -91,6 +91,3 @@ export default function BigProjCard({
 	)
 }
 
-//TODO : Add image
-//TODO : add text description elements
-//TODO : add the line decoration on the card in left middle

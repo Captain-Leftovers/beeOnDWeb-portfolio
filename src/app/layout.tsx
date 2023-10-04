@@ -39,4 +39,3 @@ export default function RootLayout({
 	)
 }
 
-//TODO : see why the font is not working in development

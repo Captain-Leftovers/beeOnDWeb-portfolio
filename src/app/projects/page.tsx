@@ -74,7 +74,3 @@ export default function Projects() {
 	)
 }
 
-//TODO : add all projects and link and maybe see the order
-//TODO : add all projects and hotos
-//TODO :  add maybe phone mockup and tablet mockup !!! from figma
-//TODO :  set the correct buildWith and info to each project for now they are not correct

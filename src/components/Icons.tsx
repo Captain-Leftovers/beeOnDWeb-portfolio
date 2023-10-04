@@ -9546,8 +9546,6 @@ export const MailSVG = ({ className, ...rest }: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={10}
-    height={10}
     fill="#76f98e"
     stroke="#76f98e"
     viewBox="0 0 512 512"
