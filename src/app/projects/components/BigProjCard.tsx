@@ -30,7 +30,7 @@ export default function BigProjCard({
 			<div
 				className={`w-full  mx-auto aspect-video flex relative rounded-lg outline outline-transparent outline-1 group-hover:outline-accent ${cardColor} dark:bg-opacity-40`}
 			>
-				<div className="w-1/2 top-0 left-14 sm:w-3/5 absolute sm:top-0 sm:left-0 sm:translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl scale-100  shadow-transparent rounded-full transition duration-500">
+				<div className="w-1/2 top-0 left-14 sm:w-3/5 absolute sm:top-0 sm:left-4 sm:translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl scale-100  shadow-transparent rounded-full transition duration-500">
 					<Image
 						loading={loading}
 						priority={priority}
