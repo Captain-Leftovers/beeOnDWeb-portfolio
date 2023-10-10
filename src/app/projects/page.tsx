@@ -30,7 +30,7 @@ export default function Projects() {
 				cardColor="bg-blue-100"
 				githubLink="https://github.com/Captain-Leftovers/my-spot"
 				liveLink="https://my-spot.vercel.app/"
-				loading='eager'
+				loading="eager"
 				priority={true}
 			/>
 			<BigProjCard
@@ -43,7 +43,7 @@ export default function Projects() {
 				imageSrc={laptopEcommerce}
 				githubLink="https://github.com/Captain-Leftovers/Ecommerce-Store"
 				cardColor="bg-green-100  dark:bg-amber-100"
-				liveLink="https://ecommerce-store-six-plum.vercel.app/"
+				liveLink="https://ecom-art-store.vercel.app/"
 			/>
 
 			<BigProjCard
@@ -55,16 +55,13 @@ export default function Projects() {
 				imageSrc={laptopAdminDash}
 				githubLink="https://github.com/Captain-Leftovers/ecommerce-admin-dashboard"
 				cardColor="bg-amber-100  dark:bg-amber-200"
-				liveLink="https://ecommerce-admin-dashboard-wheat.vercel.app/"
+				liveLink="https://dash-cms.vercel.app/"
 			/>
 
 			<BigProjCard
 				buildWith="Build with : React, Typescript, Prisma, TRPC"
 				name="BeeKeeper's Log"
-				description={[
-					'Track hive health',
-					'Store inspection logs',
-				]}
+				description={['Track hive health', 'Store inspection logs']}
 				imageSrc={beeLogLaptop}
 				cardColor="bg-blue-100"
 				githubLink="https://github.com/Captain-Leftovers/Captain-Leftovers-bee-log-react-trpc-prisma-postgresql-"
@@ -73,4 +70,3 @@ export default function Projects() {
 		</main>
 	)
 }
-
