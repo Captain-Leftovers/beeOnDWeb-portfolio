@@ -8,7 +8,7 @@ type BigProjCardProps = {
 	description: string[]
 	imageSrc: StaticImageData
 	cardColor?: string
-	githubLink: string
+	githubLink?: string
 	liveLink?: string
 	loading?: 'lazy' | 'eager'
 	priority?: boolean
@@ -64,12 +64,26 @@ export default function BigProjCard({
 							href={githubLink}
 							target="_blank"
 							className="w-8 hover:scale-110 "
+							style={{
+								pointerEvents:
+									liveLink === '' ? 'none' : 'auto',
+								opacity: liveLink === '' ? 0.5 : 1,
+
+							}}
 						>
 							<GithubIcon className="" />
 						</a>
 						<a
 							href={liveLink}
 							target="_blank"
+							style={{
+								pointerEvents:
+									liveLink === '' ? 'none' : 'auto',
+								
+								opacity: liveLink === '' ? 0.5 : 1,
+
+
+							}}
 							className=" shadow-md w-16 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center p-1 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium sm:font-semibold hover:bg-transparent dark:hover:bg-transparent"
 						>
 							Live Link
@@ -90,4 +104,3 @@ export default function BigProjCard({
 		</div>
 	)
 }
-

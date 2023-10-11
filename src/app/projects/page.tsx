@@ -61,11 +61,11 @@ export default function Projects() {
 			<BigProjCard
 				buildWith="Build with : React, Typescript"
 				name="BeeKeeper's Log"
-				description={['Development in progress']}
+				description={['Development in progress...']}
 				imageSrc={beeLogLaptop}
 				cardColor="bg-blue-100"
-				githubLink="#"
-				liveLink="#"
+				githubLink=""
+				liveLink=""
 			/>
 		</main>
 	)
