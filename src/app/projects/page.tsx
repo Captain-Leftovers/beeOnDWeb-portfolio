@@ -59,13 +59,13 @@ export default function Projects() {
 			/>
 
 			<BigProjCard
-				buildWith="Build with : React, Typescript, Prisma, TRPC"
+				buildWith="Build with : React, Typescript"
 				name="BeeKeeper's Log"
-				description={['Track hive health', 'Store inspection logs']}
+				description={['Development in progress']}
 				imageSrc={beeLogLaptop}
 				cardColor="bg-blue-100"
-				githubLink="https://github.com/Captain-Leftovers/Captain-Leftovers-bee-log-react-trpc-prisma-postgresql-"
-				liveLink="https://beekeeperslog.com"
+				githubLink="#"
+				liveLink="#"
 			/>
 		</main>
 	)
