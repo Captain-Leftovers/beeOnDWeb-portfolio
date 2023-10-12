@@ -15,7 +15,7 @@ export default function FollowMe() {
 				<GithubIcon />
 			</a>
 			<a
-				href="https://www.linkedin.com/in/dobromir-ivanov-710136261/"
+				href="https://www.linkedin.com/in/beeondweb"
 				target="_blank"
 				className="w-8 mr-4 hover:scale-110 xl:-rotate-90"
 			>
