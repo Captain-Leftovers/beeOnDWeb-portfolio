@@ -22,13 +22,7 @@ export default function FollowMe() {
 				<LinkedInIcon />
 			</a>
 
-			<a
-				href="https://twitter.com/lalilulelo_mg"
-				target="_blank"
-				className="w-8 mr-4  hover:scale-110 xl:-rotate-90"
-			>
-				<XSVG />
-			</a>
+			
 		</section>
 	)
 }
