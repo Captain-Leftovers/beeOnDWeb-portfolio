@@ -26,7 +26,9 @@ export default function BigProjCard({
 	priority,
 }: BigProjCardProps) {
 	return (
-		<div className="md:w-[750px] w-[360px] mx-auto h-auto group">
+		<div className="md:w-[750px] w-[360px] mx-auto h-auto group relative">
+			<div className='absolute -left-4 -top-4 border-2 border-text -z-40 w-[calc(100%+2rem)] h-[calc(100%+2rem)] rounded-[1.5rem]' />
+
 			<div
 				className={`w-full  mx-auto aspect-video flex relative rounded-lg outline outline-transparent outline-1 group-hover:outline-accent ${cardColor} dark:bg-opacity-40`}
 			>

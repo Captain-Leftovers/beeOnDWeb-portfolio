@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Projects() {
 	return (
-		<main className="w-full xl:max-w-screen-xl space-y-28 py-10">
+		<main className="w-full xl:max-w-screen-xl space-y-28 pt-10 pb-16">
 			<div className="w-full">
 				<h1 className="text-2xl mx-auto p-4 sm:text-6xl text-center font-medium xl:max-w-screen-lg ">
 					Exploring the intersection of technology and creativity.
