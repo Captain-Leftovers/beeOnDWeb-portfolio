@@ -7,11 +7,9 @@ export default function PersonalPhotoCard() {
 			<Image
 				src={myPhoto}
 				alt="myPhoto"
-				loading='eager'
-				fill
+				loading="eager"
 				style={{ objectFit: 'contain' }}
 				priority
-				
 			/>
 		</div>
 	)

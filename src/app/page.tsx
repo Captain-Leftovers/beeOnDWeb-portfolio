@@ -1,6 +1,8 @@
 import { LaptopSVG } from "@/components/Icons";
 
 export default function Home() {
+
+	
 	return (
 		<main className="flex flex-col xl:flex-row  items-center justify-around  bg-background dark:bg-background-dark grow w-full lg:max-w-screen-xl text-text dark:text-text-dark">
 		<div className="w-1/2">

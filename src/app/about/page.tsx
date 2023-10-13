@@ -7,6 +7,8 @@ export const metadata = {
 }
 
 export default function page() {
+
+
 	return (
 		<main className="flex flex-col items-center justify-center grow  p-2 max-w-7xl">
 			<Introduction />

@@ -3,8 +3,8 @@ export default function TypeScriptSVG() {
 		<div className="">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				height="auto"
-				width="auto"
+				height="100%"
+				width="100%"
 				aria-label="TypeScript"
 				role="img"
 				viewBox="0 0 512 512"
