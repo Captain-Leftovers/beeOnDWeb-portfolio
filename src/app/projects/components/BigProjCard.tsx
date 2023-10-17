@@ -26,11 +26,11 @@ export default function BigProjCard({
 	priority,
 }: BigProjCardProps) {
 	return (
-		<div className="md:w-[750px] w-[360px] mx-auto h-auto group relative">
-			<div className='absolute -left-4 -top-4 border-2 border-text -z-40 w-[calc(100%+2rem)] h-[calc(100%+2rem)] rounded-[1.5rem]' />
+		<div className="lg:w-[750px] md:w-9/12 sm:w-9/12 w-5/6 mx-auto h-auto group relative">
+			<div className="" />
 
 			<div
-				className={`w-full  mx-auto aspect-video flex relative rounded-lg outline outline-transparent outline-1 group-hover:outline-accent ${cardColor} dark:bg-opacity-40`}
+				className={`w-full  mx-auto aspect-video flex relative rounded-lg outline outline-text outline-offset-8 box-content  border border-transparent  group-hover:border-accent ${cardColor} dark:bg-opacity-40`}
 			>
 				<div className="w-1/2 top-0 left-14 sm:w-3/5 absolute sm:top-0 sm:left-4 sm:translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl scale-100  shadow-transparent rounded-full transition duration-500">
 					<Image
@@ -47,7 +47,7 @@ export default function BigProjCard({
 						<h2 className="text-sm sm:text-2xl text-text/70 dark:text-text-dark/80">
 							{buildWith}
 						</h2>
-						<h1 className="text-lg sm:text-4xl leading-5">
+						<h1 className="text-lg sm:text-3xl md:text-4xl leading-5">
 							{name}
 						</h1>
 						<section className="text-text/70 dark:text-text-dark/80 text-xs sm:text-base">
@@ -70,7 +70,6 @@ export default function BigProjCard({
 								pointerEvents:
 									liveLink === '' ? 'none' : 'auto',
 								opacity: liveLink === '' ? 0.5 : 1,
-
 							}}
 						>
 							<GithubIcon className="" />
@@ -81,10 +80,8 @@ export default function BigProjCard({
 							style={{
 								pointerEvents:
 									liveLink === '' ? 'none' : 'auto',
-								
+
 								opacity: liveLink === '' ? 0.5 : 1,
-
-
 							}}
 							className=" shadow-md w-16 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center p-1 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium sm:font-semibold hover:bg-transparent dark:hover:bg-transparent"
 						>
