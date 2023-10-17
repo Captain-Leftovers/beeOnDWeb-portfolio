@@ -42,7 +42,7 @@ export default function BigProjCard({
 					/>
 				</div>
 
-				<div className="text-sm w-1/2  flex flex-col justify-between pl-4 md:pl-8 z-20 py-2">
+				<div className="text-sm w-1/2  flex flex-col justify-between pl-2 md:pl-8 z-20 py-2">
 					<div className="my-auto sm:space-y-4 space-y-1">
 						<h2 className="text-sm sm:text-2xl text-text/70 dark:text-text-dark/80">
 							{buildWith}
