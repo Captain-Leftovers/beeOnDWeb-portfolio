@@ -40,6 +40,7 @@ module.exports = {
 			'spin-one': 'spin-big-small 3s ease-in-out  forwards ',
 			'spin-two': 'spin-small-big 3s ease-in-out  forwards ',
 			'fade-in-out': 'fade-in-out 1.5s ease-out  forwards ',
+			'fade-in-out-text': 'fade-in-out-text 4s ease infinite  ',
 		},
 		keyframes: {
 			'spin-reversed': {
@@ -67,7 +68,11 @@ module.exports = {
 				'50%': { opacity: '1' },
 				'100%': { opacity: '0' },
 			},
-			
+			'fade-in-out-text': {
+				'0%': { opacity: '0.4' },
+				'50%': { opacity: '1' },
+				'100%': { opacity: '0.4' },
+			},
 		},
 	},
 }

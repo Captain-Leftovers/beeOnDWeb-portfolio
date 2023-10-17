@@ -62,6 +62,7 @@ export default function Projects() {
 				buildWith="Build with : React, Typescript"
 				name="BeeKeeper's Log"
 				description={['Development in progress...']}
+				inProgress={true}
 				imageSrc={beeLogLaptop}
 				cardColor="bg-blue-100"
 				githubLink=""

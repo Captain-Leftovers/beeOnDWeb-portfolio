@@ -12,6 +12,7 @@ type BigProjCardProps = {
 	liveLink?: string
 	loading?: 'lazy' | 'eager'
 	priority?: boolean
+	inProgress?: boolean
 }
 
 export default function BigProjCard({
@@ -24,6 +25,7 @@ export default function BigProjCard({
 	liveLink,
 	loading,
 	priority,
+	inProgress
 }: BigProjCardProps) {
 	return (
 		<div className="lg:w-[750px] md:w-9/12 sm:w-9/12 w-5/6 mx-auto h-auto group relative">
@@ -42,7 +44,7 @@ export default function BigProjCard({
 					/>
 				</div>
 
-				<div className="text-sm w-1/2  flex flex-col justify-between pl-2 md:pl-8 z-20 py-2">
+				<div className="text-sm w-1/2  flex flex-col justify-between pl-2 sm:pl-4 md:pl-8 z-20 py-2">
 					<div className="my-auto sm:space-y-4 space-y-1">
 						<h2 className="text-sm sm:text-2xl text-text/70 dark:text-text-dark/80">
 							{buildWith}
@@ -53,8 +55,8 @@ export default function BigProjCard({
 						<section className="text-text/70 dark:text-text-dark/80 text-xs sm:text-base">
 							<ul>
 								{description.map((desc) => (
-									<li key={desc}>
-										<p>{desc}</p>
+									<li className={`${inProgress && 'text-red-400 animate-fade-in-out-text'}`} key={desc}>
+										<p >{desc}</p>
 									</li>
 								))}
 							</ul>
