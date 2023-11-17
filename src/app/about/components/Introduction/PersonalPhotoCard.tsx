@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import myPhoto from '#/one.png'
+import myPhoto from '#/me.png'
 
 export default function PersonalPhotoCard() {
 	return (
