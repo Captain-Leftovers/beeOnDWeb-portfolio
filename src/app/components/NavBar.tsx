@@ -6,9 +6,9 @@ import { usePathname } from 'next/navigation'
 export default function NavBar() {
 	const pathname = usePathname()
 	return (
-		<header className="bg-background  dark:bg-background-dark bg-opacity-95 flex items-center justify-between max-w-screen-xl  w-full  py-8 font-medium  sticky top-0 z-50">
+		<header className="bg-background  dark:bg-background-dark bg-opacity-95 backdrop-blur-sm flex items-center justify-between max-w-screen-xl  w-full  py-8 font-medium  sticky top-0 z-50">
 			<nav className=" mx-auto lg:mx-0">
-				<Link href="/" className="relative mr-6 group">
+				<Link href="/"  className="relative mr-6 group">
 					Home
 					<span
 						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent dark:bg-accent-dark group-hover:w-full transition-[width] ease duration-300 ${
@@ -18,7 +18,7 @@ export default function NavBar() {
 						&nbsp;
 					</span>
 				</Link>
-				<Link href="/about" className="relative mr-6 group">
+				<Link href="/about"  className="relative mr-6 group">
 					About Me
 					<span
 						className={`absolute left-0 inline-block  h-[2px] -bottom-0.5 bg-accent dark:bg-accent-dark group-hover:w-full transition-[width] ease duration-300 ${

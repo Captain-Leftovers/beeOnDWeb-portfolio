@@ -130,7 +130,7 @@ export default function ContactForm() {
 					<button
 						disabled = {isLoading}
 						type="submit"
-						className="bg-primary text-text py-2 px-4 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+						className="bg-primary hover:bg-primary/90 text-text py-2 px-4 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
 					>
 						Send
 					</button>

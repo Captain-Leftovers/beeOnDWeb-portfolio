@@ -25,7 +25,7 @@ export default function BigProjCard({
 	liveLink,
 	loading,
 	priority,
-	inProgress
+	inProgress,
 }: BigProjCardProps) {
 	return (
 		<div className="lg:w-[750px] md:w-9/12 sm:w-9/12 w-5/6 mx-auto h-auto group relative">
@@ -53,10 +53,16 @@ export default function BigProjCard({
 							{name}
 						</h1>
 						<section className="text-text/70 dark:text-text-dark/80 text-xs sm:text-base">
-							<ul>
+							<ul className="list-disc">
 								{description.map((desc) => (
-									<li className={`${inProgress && 'text-red-400 animate-fade-in-out-text'}`} key={desc}>
-										<p >{desc}</p>
+									<li
+										className={`${
+											inProgress &&
+											'text-red-400 animate-fade-in-out-text'
+										}`}
+										key={desc}
+									>
+										<p>{desc}</p>
 									</li>
 								))}
 							</ul>
@@ -85,7 +91,7 @@ export default function BigProjCard({
 
 								opacity: liveLink === '' ? 0.5 : 1,
 							}}
-							className=" shadow-md w-20 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center py-0.5 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium sm:font-semibold hover:bg-transparent dark:hover:bg-transparent"
+							className=" shadow-md w-20 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center py-0.5 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium sm:font-semibold hover:bg-primary/90 dark:hover:bg-transparent"
 						>
 							Live Link
 						</a>
