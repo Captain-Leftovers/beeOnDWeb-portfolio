@@ -10,14 +10,14 @@ export default function FollowMe() {
 			<a
 				href="https://github.com/Captain-Leftovers"
 				target="_blank"
-				className="w-8 mr-4  ml-14 hover:scale-110 xl:-rotate-90"
+				className="w-8 mr-4  ml-14 hover:scale-110 xl:-rotate-90 transition"
 			>
 				<GithubIcon />
 			</a>
 			<a
 				href="https://www.linkedin.com/in/beeondweb"
 				target="_blank"
-				className="w-8 mr-4 hover:scale-110 xl:-rotate-90"
+				className="w-8 mr-4 hover:scale-110 xl:-rotate-90 transition"
 			>
 				<LinkedInIcon />
 			</a>

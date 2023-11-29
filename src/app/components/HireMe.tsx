@@ -16,7 +16,7 @@ export default function HireMe() {
 					/>
 					<Link
 						href="/contact"
-						className="absolute flex items-center justify-center w-24 h-24 font-normal transition-all duration-200  rounded-full dark:bg-primary-dark  bg-primary dark:text-text-dark text-text hover:scale-105 hover:bg-primary/90 active:scale-100"
+						className="absolute flex items-center justify-center w-24 h-24 font-normal transition-all duration-200  rounded-full dark:bg-primary-dark  bg-primary dark:text-text-dark text-text hover:scale-105 hover:bg-primary/90 active:scale-100 "
 					>
 						Hire Me
 					</Link>

@@ -1,6 +1,7 @@
 import BigProjCard from './components/BigProjCard'
 import beeLogLaptop from '#/laptopBeeLog.png'
 import mySpotLaptop from '#/laptopMySpot.png'
+import multyCms from '#/multy-cms .png'
 import bahamataLaptop from '#/laptopBahamata.png'
 import laptopEcommerce from '#/laptopEcommerce.png'
 import laptopAdminDash from '#/laptopAdminDash.png'
@@ -19,18 +20,33 @@ export default function Projects() {
 				</h1>
 			</div>
 			<BigProjCard
-				buildWith="Build with : React, NextJs, Tailwind, Zustand"
+				buildWith="Build with : NextJs, Zustand"
 				name="Bahamata Service"
 				description={[
 					'Motorcycle repair service',
-					'List motorcycles for sale',
-					'Control for sale items through CMS'
-					
+					'Control motorcycles for sale through CMS',
 				]}
+				client={true}
 				imageSrc={bahamataLaptop}
 				cardColor="bg-green-100"
 				githubLink="https://github.com/Captain-Leftovers/motorcycle-repair-shop-next14"
 				liveLink="https://www.bahamataservice.com/"
+				loading="eager"
+				priority={true}
+			/>
+			<BigProjCard
+				buildWith="Build with : NextJs, Shadcn, Cloudinary"
+				name="Multy-CMS"
+				description={[
+					'Motorcycle repair service',
+					'Control motorcycles for sale through CMS',
+				]}
+				client={true}
+				imageSrc={multyCms}
+				cardColor="bg-amber-100"
+				githubLink="https://github.com/Captain-Leftovers/multi-web-cms-next14"
+				liveLink="/multy-cms"
+				demo={true}
 				loading="eager"
 				priority={true}
 			/>
