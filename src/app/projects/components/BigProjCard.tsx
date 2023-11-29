@@ -3,7 +3,7 @@ import blueNoise from '#/blue-circle.png'
 import { GithubIcon } from '@/components/Icons'
 
 type BigProjCardProps = {
-	client?:boolean | undefined
+	client?: boolean | undefined
 	buildWith: string
 	name: string
 	description: string[]
@@ -33,14 +33,15 @@ export default function BigProjCard({
 }: BigProjCardProps) {
 	return (
 		<div className="lg:w-[750px] md:w-9/12 sm:w-9/12 w-5/6 mx-auto h-auto group relative">
-
 			<div className="" />
 
 			<div
 				className={`w-full  mx-auto aspect-video flex relative rounded-lg outline outline-text outline-offset-8 box-content  border border-transparent  group-hover:border-accent ${cardColor} dark:bg-opacity-40`}
-				>
+			>
 				{client && (
-					<p className='absolute md:block  hidden sm:left-0 sm:top-0 bg-accent sm:h-auto sm:w-full p-1 px-2 rounded-t-lg text-xs sm:text-base'>Real-world client project</p>
+					<p className="absolute md:block  hidden sm:left-0 sm:top-0 bg-accent sm:h-auto sm:w-full p-1 px-2 rounded-t-lg text-xs sm:text-base">
+						Real-world client project
+					</p>
 				)}
 				<div className="w-1/2 top-0 left-14 sm:w-3/5 absolute sm:top-0 sm:left-4 sm:translate-y-1/2  animate-spin-two shadow-md backdrop-blur-3xl scale-100  shadow-transparent rounded-full transition duration-500">
 					<Image
@@ -49,7 +50,7 @@ export default function BigProjCard({
 						alt="grain"
 						src={blueNoise}
 						className="dark:opacity-60"
-						/>
+					/>
 				</div>
 
 				<div className="text-sm w-1/2  flex flex-col justify-between pl-2 sm:pl-4 md:pl-8 z-20 py-2">
@@ -84,13 +85,14 @@ export default function BigProjCard({
 							className="w-8 hover:scale-110  transition"
 							style={{
 								pointerEvents:
-									liveLink === '' ? 'none' : 'auto',
-								opacity: liveLink === '' ? 0.5 : 1,
+									githubLink === '' ? 'none' : 'auto',
+								opacity: githubLink === '' ? 0.5 : 1,
 							}}
 						>
 							<GithubIcon className="" />
 						</a>
 						<a
+
 							href={liveLink}
 							target="_blank"
 							style={{
@@ -99,7 +101,7 @@ export default function BigProjCard({
 
 								opacity: liveLink === '' ? 0.5 : 1,
 							}}
-							className=" shadow-md w-20 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center py-0.5 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium sm:font-semibold hover:bg-primary/90 dark:hover:bg-transparent transition"
+							className={`shadow-md w-20 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center py-0.5 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium sm:font-semibold hover:bg-primary/90 dark:hover:bg-transparent transition disabled:opacity-50 disabled:cursor-not-allowed`}
 						>
 							{!!demo ? 'Demo' : 'Live Link'}
 						</a>

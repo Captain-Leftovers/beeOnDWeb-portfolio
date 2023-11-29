@@ -38,14 +38,14 @@ export default function Projects() {
 				buildWith="Build with : NextJs, Shadcn, Cloudinary"
 				name="Multy-CMS"
 				description={[
-					'Motorcycle repair service',
-					'Control motorcycles for sale through CMS',
+					'CMS for multiple websites',
+					'Give access to clients to edit their own website'
 				]}
 				client={true}
 				imageSrc={multyCms}
 				cardColor="bg-amber-100"
 				githubLink="https://github.com/Captain-Leftovers/multi-web-cms-next14"
-				liveLink="/multy-cms"
+				liveLink=""
 				demo={true}
 				loading="eager"
 				priority={true}
