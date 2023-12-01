@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
 import blueNoise from '#/blue-circle.png'
 import { GithubIcon } from '@/components/Icons'
+import EmbedButton from './EmbedButton'
 
 type BigProjCardProps = {
 	client?: boolean | undefined
@@ -31,6 +32,10 @@ export default function BigProjCard({
 	priority,
 	inProgress,
 }: BigProjCardProps) {
+
+
+	
+
 	return (
 		<div className="lg:w-[750px] md:w-9/12 sm:w-9/12 w-5/6 mx-auto h-auto group relative">
 			<div className="" />
@@ -91,7 +96,7 @@ export default function BigProjCard({
 						>
 							<GithubIcon className="" />
 						</a>
-						<a
+						{ !demo ? (<a
 
 							href={liveLink}
 							target="_blank"
@@ -103,8 +108,11 @@ export default function BigProjCard({
 							}}
 							className={`shadow-md w-20 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center py-0.5 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium sm:font-semibold hover:bg-primary/90 dark:hover:bg-transparent transition disabled:opacity-50 disabled:cursor-not-allowed`}
 						>
-							{!!demo ? 'Demo' : 'Live Link'}
-						</a>
+							Live Link
+						</a>) 
+						: <EmbedButton embedLink={
+							liveLink
+						}/>}
 					</div>
 				</div>
 				<div className="absolute w-3/5 -right-5 -bottom-8 sm:-right-20 sm:-bottom-20 sm:w-2/3">

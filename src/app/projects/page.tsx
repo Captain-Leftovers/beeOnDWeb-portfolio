@@ -15,7 +15,7 @@ export default function Projects() {
 	return (
 		<main className="w-full xl:max-w-screen-xl space-y-28 pt-10 pb-16">
 			<div className="w-full">
-				<h1 className="text-2xl mx-auto p-4 sm:text-6xl text-center font-medium xl:max-w-screen-lg ">
+				<h1 className="text-2xl mx-auto p-4 sm:text-4xl font-medium text-center font-medium xl:max-w-screen-lg ">
 					Exploring the intersection of technology and creativity.
 				</h1>
 			</div>
@@ -39,13 +39,13 @@ export default function Projects() {
 				name="Multy-CMS"
 				description={[
 					'CMS for multiple websites',
-					'Give access to clients to edit their own website'
+					'Give access to clients to edit their own website',
 				]}
 				client={true}
 				imageSrc={multyCms}
 				cardColor="bg-amber-100"
 				githubLink="https://github.com/Captain-Leftovers/multi-web-cms-next14"
-				liveLink=""
+				liveLink="https://scribehow.com/embed/Preview_the_Multy-Web-CMS_features__h0U6x42fSLyS30GEU9hlUA?skipIntro=true"
 				demo={true}
 				loading="eager"
 				priority={true}
