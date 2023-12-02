@@ -9,11 +9,12 @@ const initialState = {
 	message: '',
 }
 
+
+
 export default function ContactForm() {
 	const [blurred, setBlurred] = useState<boolean>(false)
 	const [data, setData] = useState(initialState)
 	const [isLoading, setIsLoading] = useState<boolean>(false)
-	console.log(data);
 	
 	const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
@@ -27,17 +28,24 @@ export default function ContactForm() {
 				body: JSON.stringify(data),
 			})
 			if (response.status === 200) {
+
 				setData(initialState)
 				setBlurred(false)
 				toast.success(
 					`Hey ${data.name}, your message was sent successfully!`
 				)
+			} else {
+				toast.error(
+					`Hey ${data.name}, something went wrong! ${response.status} ${response.statusText}`
+				)
 			}
 		} catch (error) {
+			
 			console.log(error)
 
 			toast.error(`Hey ${data.name}, something went wrong!`)
 		}
+		
 		setIsLoading(false)
 	}
 

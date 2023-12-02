@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 	let data
 	try {
 		data = await resend.emails.send({
-			from: 'Contact Form <onboarding@resend.dev>',
+			from: 'Contact Form https://www.beeondweb.com/ <onboarding@resend.dev>',
 			to: ['beeondweb@gmail.com'],
 			subject: 'Portfolio Contact Form Message',
 			text: message,
