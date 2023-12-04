@@ -19,7 +19,7 @@ const container = {
 	hidden: {},
 	show: {
 		transition: {
-			staggerChildren: 0.05,
+			staggerChildren: 0.08,
 		},
 	},
 }
@@ -30,7 +30,7 @@ const item = {
 		opacity: 1,
 		y: 0,
 		transition: {
-			duration: 0.2,
+			duration: 0.4,
 		},
 	},
 }
@@ -44,7 +44,10 @@ export default function SkillsTree() {
 		<motion.div
 			variants={container}
 			initial="hidden"
-			animate="show"
+			whileInView="show"
+			viewport={{
+				once: true,
+			}}
 			className="my-10 w-full grid gap-6 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2 grid-cols-2"
 		>
 			<motion.div variants={item}>
