@@ -22,12 +22,11 @@ const container = {
 			staggerChildren: 0.05,
 		},
 	},
-	
 }
 
 const item = {
-	hidden: { opacity: 0, y: 30 }, 
-	show: { 
+	hidden: { opacity: 0, y: 30 },
+	show: {
 		opacity: 1,
 		y: 0,
 		transition: {
@@ -38,8 +37,8 @@ const item = {
 
 export default function SkillsTree() {
 
-
-
+	
+	//TODO make the animation happen only while in view
 
 	return (
 		<motion.div
