@@ -13,7 +13,7 @@ type MagneticWrapperProps = {
 export default function MagneticWrapper({ children }: MagneticWrapperProps) {
 	const ref = useRef<HTMLDivElement>(null)
 	const [position, setPosition] = useState({ x: 0, y: 0 })
-	const isTouchDevice = 'ontouchstart' in window
+	const isTouchDevice = window ? 'ontouchstart' in window : false
   
 	const handleMouse = (e: React.MouseEvent<HTMLDivElement>) => {
 	  if (!isTouchDevice && ref.current) {
