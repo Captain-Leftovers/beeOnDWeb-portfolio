@@ -8,9 +8,9 @@ export default function Home() {
 				<LaptopSVG className="w-full h-auto" />
 			</div>
 
-			<article className="flex flex-col w-fit  ">
+			<article className="flex flex-col w-fit  text-center">
 				<h1 className="self-center text-4xl font-medium ">Hi there!</h1>
-				<p className="text-center ">
+				<p className='animate-slideFromLeft ' >
 					I&apos;m{' '}
 					<span className="text-2xl font-medium text-primary dark:text-primary-dark">
 						<Link className="relative group" href="/about">
@@ -20,9 +20,10 @@ export default function Home() {
 							></span>
 						</Link>
 					</span>
-					,<br /> Full Stack Programmer and Web Developer,
-					<br /> fusing cutting-edge technology with your visions.
+					,
 				</p>
+				<p> Full Stack Programmer and Web Developer,</p>
+				<p> fusing cutting-edge technology with your visions.</p>
 				<div className="flex items-center justify-center w-full mt-4">
 					<a
 						download

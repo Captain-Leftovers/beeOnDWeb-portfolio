@@ -41,6 +41,7 @@ module.exports = {
 			'spin-two': 'spin-small-big 3s ease-in-out  forwards ',
 			'fade-in-out': 'fade-in-out 1.5s ease-out  forwards ',
 			'fade-in-out-text': 'fade-in-out-text 4s ease infinite  ',
+			'slideFromLeft': 'slideFromLeft 0.5s ease-out  forwards ',
 		},
 		keyframes: {
 			'spin-reversed': {
@@ -51,14 +52,14 @@ module.exports = {
 			},
 			'spin-big-small': {
 				'0%': { transform: 'rotate(0deg) scale(1) ' },
-				
+
 				'100%': {
 					transform: 'rotate(90deg) scale(0.2) ',
 				},
 			},
 			'spin-small-big': {
 				'0%': { transform: 'rotate(0deg) scale(0.2)  ' },
-				
+
 				'100%': {
 					transform: 'rotate(45deg) scale(1) translate(50%, -60%) ',
 				},
@@ -68,6 +69,11 @@ module.exports = {
 				'50%': { opacity: '1' },
 				'100%': { opacity: '0' },
 			},
+			'slideFromLeft': {
+				'0%': { transform: 'translateX(-20px)' },
+				'100%': { transform: 'translateX(0)' },
+			},
+
 			'fade-in-out-text': {
 				'0%': { opacity: '0.4' },
 				'50%': { opacity: '1' },
