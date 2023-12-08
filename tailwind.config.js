@@ -41,7 +41,7 @@ module.exports = {
 			'spin-two': 'spin-small-big 3s ease-in-out  forwards ',
 			'fade-in-out': 'fade-in-out 1.5s ease-out  forwards ',
 			'fade-in-out-text': 'fade-in-out-text 4s ease infinite  ',
-			'slideFromLeft': 'slideFromLeft 0.5s ease-out  forwards ',
+			'slideFromLeft': 'slideFromLeft 0.6s ease-out  forwards ',
 		},
 		keyframes: {
 			'spin-reversed': {
