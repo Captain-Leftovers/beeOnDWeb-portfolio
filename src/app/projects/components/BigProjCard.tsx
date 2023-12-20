@@ -44,7 +44,7 @@ export default function BigProjCard({
 				className={`w-full  mx-auto aspect-video flex relative rounded-lg outline outline-text outline-offset-8 box-content  border border-transparent  group-hover:border-accent ${cardColor} dark:bg-opacity-40`}
 			>
 				{client && (
-					<p className="absolute md:block  hidden sm:left-0 sm:top-0 bg-accent sm:h-auto sm:w-full p-1 px-2 rounded-t-lg text-xs sm:text-base">
+					<p className="absolute lg:block  hidden sm:left-0 sm:top-0 bg-accent sm:h-auto sm:w-full p-1 px-2 rounded-t-lg text-xs sm:text-base">
 						Real-world client project
 					</p>
 				)}
