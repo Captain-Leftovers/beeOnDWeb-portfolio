@@ -10,7 +10,7 @@ export default function Home() {
 
 			<article className="flex flex-col w-fit  text-center">
 				<h1 className="self-center text-4xl font-medium ">Hi there!</h1>
-				<p className='animate-slideFromLeft ' >
+				<p className="animate-slideFromLeft ">
 					I&apos;m{' '}
 					<span className="text-2xl font-medium text-primary dark:text-primary-dark">
 						<Link className="relative group" href="/about">
@@ -24,17 +24,17 @@ export default function Home() {
 				</p>
 				<p> Full Stack Programmer and Web Developer,</p>
 				<p> fusing cutting-edge technology with your visions.</p>
-				<div className="flex items-center justify-center w-full mt-4">
+				<div className="flex items-center justify-center w-full mt-4  whitespace-nowrap">
 					<a
 						download
 						href="/Resume.pdf"
-						className=" w-40 flex items-center justify-center p-2.5 px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-semibold hover:bg-primary/90 dark:hover:bg-transparent transition"
+						className="w-32 sm:w-40 flex items-center justify-center p-2 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium hover:bg-primary/90 dark:hover:bg-transparent transition"
 					>
 						My Resume
 					</a>
 					<a
 						href="/contact"
-						className="flex items-center justify-center ml-4 p-2.5 px-6 border-2 border-solid rounded-md border-primary hover:text-primary dark:hover:text-primary-dark dark:border-primary-dark dark:bg-background-dark font-semibold w-40 cursor-pointer transition"
+						className="flex items-center justify-center w-32 sm:w-40 ml-4 p-2 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary hover:text-primary dark:hover:text-primary-dark dark:border-primary-dark dark:bg-background-dark font-medium cursor-pointer transition"
 					>
 						Get in touch
 					</a>

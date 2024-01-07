@@ -106,7 +106,7 @@ export default function BigProjCard({
 
 								opacity: liveLink === '' ? 0.5 : 1,
 							}}
-							className={`shadow-md w-20 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center py-0.5 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium sm:font-semibold hover:bg-primary/90 dark:hover:bg-transparent transition disabled:opacity-50 disabled:cursor-not-allowed`}
+							className={`shadow-md w-20 whitespace-nowrap  sm:w-24 md:w-32 flex items-center justify-center py-0.5 sm:p-2.5 sm:px-6 border-2 border-solid rounded-md border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark font-medium hover:bg-primary/90 dark:hover:bg-transparent transition disabled:opacity-50 disabled:cursor-not-allowed`}
 						>
 							Live Link
 						</a>) 
