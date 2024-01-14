@@ -122,6 +122,7 @@ export default function BigProjCard({
 							className=""
 							src={imageSrc}
 							alt="laptop"
+							priority={true}
 						/>
 					</picture>
 				</div>

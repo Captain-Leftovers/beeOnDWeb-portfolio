@@ -9,7 +9,7 @@ export default function PersonalPhotoCard() {
 				alt="myPhoto"
 				loading="eager"
 				style={{ objectFit: 'contain' }}
-				priority
+				priority={true}
 			/>
 		</div>
 	)
