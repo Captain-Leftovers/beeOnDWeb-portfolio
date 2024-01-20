@@ -22,8 +22,8 @@ export default function Home() {
 					</span>
 					,
 				</p>
-				<p> Full Stack Programmer and Web Developer,</p>
-				<p> fusing cutting-edge technology with your visions.</p>
+				<p className='sm:text-xl'> Full Stack Programmer and Web Developer,</p>
+				<p className='sm:text-xl'> fusing cutting-edge technology with your visions.</p>
 				<div className="flex items-center justify-center w-full mt-4  whitespace-nowrap">
 					<a
 						download
