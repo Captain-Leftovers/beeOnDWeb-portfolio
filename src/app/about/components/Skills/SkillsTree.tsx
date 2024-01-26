@@ -7,6 +7,7 @@ import JavaScriptSVG from './JavaScriptSVG'
 import HtmlSVG from './HtmlSVG'
 import ReactSVG from './ReactSVG'
 import TypeScriptSVG from './TypeScriptSVG'
+import GoSVG from './GoSVG'
 import TrpcSVG from './TrpcSVG'
 import SqlSVG from './SqlSVG'
 import PrismaSVG from './PrismaSVG'
@@ -14,7 +15,6 @@ import TailwindSVG from './TailwindSVG'
 import GitSVG from './GitSVG'
 import NodJsSVG from './NodeJsSVG'
 import { motion } from 'framer-motion'
-import { on, once } from 'events'
 
 const item = {
 	hidden: { opacity: 0, y: 30 },
@@ -37,7 +37,6 @@ export default function SkillsTree() {
 				initial="hidden"
 				whileInView="show"
 				viewport={{ once: true }}
-				
 			>
 				<SkillCard svgIcon={<HtmlSVG />} text="HTML" />
 			</motion.div>
@@ -73,6 +72,16 @@ export default function SkillsTree() {
 			>
 				<SkillCard svgIcon={<TypeScriptSVG />} text="TypeScript" />
 			</motion.div>
+
+			<motion.div
+				variants={item}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
+				<SkillCard svgIcon={<GoSVG />} text="Go" />
+			</motion.div>
+
 			<motion.div
 				variants={item}
 				initial="hidden"
