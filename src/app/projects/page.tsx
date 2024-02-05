@@ -91,7 +91,7 @@ export default function Projects() {
 			/>
 
 			<BigProjCard
-				buildWith="Build with : React, Typescript"
+				buildWith="Build with : Go, HTMX"
 				name="BeeKeeper's Log"
 				description={['Development in progress...']}
 				inProgress={true}
