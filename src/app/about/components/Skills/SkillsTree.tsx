@@ -28,8 +28,6 @@ const item = {
 }
 
 export default function SkillsTree() {
-	//TODO make the animation happen only while in view
-
 	return (
 		<div className="my-10 w-full grid gap-6 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2 grid-cols-2 ">
 			<motion.div

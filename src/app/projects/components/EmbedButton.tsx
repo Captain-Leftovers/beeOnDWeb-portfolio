@@ -45,5 +45,3 @@ export default function EmbedButton({
 	)
 }
 
-
-// TODO add this to the github repo after test it on mobile
