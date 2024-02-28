@@ -2,6 +2,8 @@
 
 import SkillCard from './SkillCard'
 import NextJsSVG from './NextJsSVG'
+import AlpineSVG from './AlpineSVG'
+import HtmxSVG from  './HtmxSVG'
 import CssSVG from './CssSVG'
 import JavaScriptSVG from './JavaScriptSVG'
 import HtmlSVG from './HtmlSVG'
@@ -29,7 +31,7 @@ const item = {
 
 export default function SkillsTree() {
 	return (
-		<div className="my-10 w-full grid gap-6 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2 grid-cols-2 ">
+		<div className="grid w-full grid-cols-2 gap-6 my-10 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2 ">
 			<motion.div
 				variants={item}
 				initial="hidden"
@@ -95,6 +97,22 @@ export default function SkillsTree() {
 				viewport={{ once: true }}
 			>
 				<SkillCard svgIcon={<NextJsSVG />} text="Next JS" />
+			</motion.div>
+			<motion.div
+				variants={item}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
+				<SkillCard svgIcon={<AlpineSVG />} text="Alpine JS" />
+			</motion.div>
+			<motion.div
+				variants={item}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
+				<SkillCard svgIcon={<HtmxSVG />} text="HTMX" />
 			</motion.div>
 			<motion.div
 				variants={item}
