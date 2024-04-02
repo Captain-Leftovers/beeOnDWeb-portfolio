@@ -5,6 +5,8 @@ import FollowMe from '@/app/components/FollowMe'
 import Footer from '@/app/components/Footer'
 import HireMe from '@/app/components/HireMe'
 import NavBar from '@/app/components/NavBar'
+import { Analytics } from '@vercel/analytics/react'
+
 
 const mont = Montserrat({
 	subsets: ['latin'],
@@ -35,6 +37,7 @@ export default function RootLayout({
 					<FollowMe />
 				</div>
 				<Footer />
+				<Analytics/>
 			</body>
 		</html>
 	)
