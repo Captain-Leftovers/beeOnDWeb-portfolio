@@ -3,7 +3,7 @@
 import SkillCard from './SkillCard'
 import NextJsSVG from './NextJsSVG'
 import AlpineSVG from './AlpineSVG'
-import HtmxSVG from  './HtmxSVG'
+import HtmxSVG from './HtmxSVG'
 import CssSVG from './CssSVG'
 import JavaScriptSVG from './JavaScriptSVG'
 import HtmlSVG from './HtmlSVG'
@@ -13,6 +13,7 @@ import GoSVG from './GoSVG'
 import TrpcSVG from './TrpcSVG'
 import SqlSVG from './SqlSVG'
 import PrismaSVG from './PrismaSVG'
+import DockerSVG from './DockerSVG'
 import TailwindSVG from './TailwindSVG'
 import GitSVG from './GitSVG'
 import NodJsSVG from './NodeJsSVG'
@@ -153,6 +154,14 @@ export default function SkillsTree() {
 				viewport={{ once: true }}
 			>
 				<SkillCard svgIcon={<NodJsSVG />} text="Node JS" />
+			</motion.div>
+			<motion.div
+				variants={item}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
+				<SkillCard svgIcon={<DockerSVG />} text="Docker" />
 			</motion.div>
 		</div>
 	)
