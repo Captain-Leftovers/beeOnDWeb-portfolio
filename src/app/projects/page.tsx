@@ -100,6 +100,17 @@ export default function Projects() {
 				githubLink=""
 				liveLink=""
 			/>
+			<BigProjCard
+				buildWith="Build with : Sveltekit, Tailwind, Drizzle, Turso"
+				name="SwiftStudy"
+				description={[
+					'A flashcard app for learning with question-answer pairs.',
+				]}
+				imageSrc={multyCms}
+				githubLink="https://github.com/Captain-Leftovers/swiftstudy"
+				cardColor="bg-green-100  dark:bg-amber-200"
+				liveLink="https://swiftstudy-seven.vercel.app/"
+			/>
 		</main>
 	)
 }
