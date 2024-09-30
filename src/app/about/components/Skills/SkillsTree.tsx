@@ -18,6 +18,10 @@ import TailwindSVG from './TailwindSVG'
 import GitSVG from './GitSVG'
 import NodJsSVG from './NodeJsSVG'
 import { motion } from 'framer-motion'
+import SvelteSVG from './SvelteSVG'
+import Affinity_Designer from './AffinityDesignerSVG'
+import AffinityPhotoSVG from './AffinityPhotoSVG'
+import FigmaSVG from './FigmaSVG'
 
 const item = {
 	hidden: { opacity: 0, y: 30 },
@@ -32,7 +36,7 @@ const item = {
 
 export default function SkillsTree() {
 	return (
-		<div className="grid w-full grid-cols-2 gap-6 my-10 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2 ">
+		<div className="grid w-full grid-cols-2 gap-6 my-10 lg:grid-cols-4 justify-items-center md:grid-cols-3 sm:grid-cols-2">
 			<motion.div
 				variants={item}
 				initial="hidden"
@@ -105,6 +109,14 @@ export default function SkillsTree() {
 				whileInView="show"
 				viewport={{ once: true }}
 			>
+				<SkillCard svgIcon={<SvelteSVG />} text="Svelte" />
+			</motion.div>
+			<motion.div
+				variants={item}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
 				<SkillCard svgIcon={<AlpineSVG />} text="Alpine JS" />
 			</motion.div>
 			<motion.div
@@ -162,6 +174,39 @@ export default function SkillsTree() {
 				viewport={{ once: true }}
 			>
 				<SkillCard svgIcon={<DockerSVG />} text="Docker" />
+			</motion.div>
+			<motion.div
+				variants={item}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
+				<SkillCard
+					svgIcon={<AffinityPhotoSVG />}
+					text="Affinity Photo"
+				/>
+			</motion.div>
+			<motion.div
+				variants={item}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
+				<SkillCard
+					svgIcon={<Affinity_Designer />}
+					text="Affinity Designer"
+				/>
+			</motion.div>
+			<motion.div
+				variants={item}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
+				<SkillCard
+					svgIcon={<FigmaSVG />}
+					text="Figma"
+				/>
 			</motion.div>
 		</div>
 	)
