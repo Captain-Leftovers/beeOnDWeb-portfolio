@@ -194,7 +194,7 @@ export default function SkillsTree() {
 			>
 				<SkillCard
 					svgIcon={<Affinity_Designer />}
-					text="Affinity Designer"
+					text="Affinity Design"
 				/>
 			</motion.div>
 			<motion.div
