@@ -8,15 +8,15 @@ export default function HireMe() {
 	return (
 		<div className="xl:fixed flex items-center justify-center xl:-left-2 xl:bottom-4">
 			<MagneticWrapper>
-				<div className="relative flex items-center justify-center w-48 h-auto">
+				<div className="relative flex items-center justify-center w-36 sm:w-48  h-auto">
 					<CircularText
 						className={
-							'fill-text dark:fill-text-dark animate-spin-slower '
+							'fill-text dark:fill-text-dark animate-spin-slower'
 						}
 					/>
 					<Link
 						href="/contact"
-						className="absolute flex items-center justify-center w-24 h-24 font-medium transition-all duration-200  rounded-full dark:bg-primary-dark  bg-primary dark:text-text-dark text-text hover:scale-105 hover:bg-primary/90 active:scale-100 "
+						className="absolute flex items-center justify-center w-2/4 h-2/4 font-medium transition-all duration-200  rounded-full dark:bg-primary-dark  bg-primary dark:text-text-dark text-text hover:scale-105 hover:bg-primary/90 active:scale-100 text-sm sm:text-base md:text-lg"
 					>
 						Hire Me
 					</Link>

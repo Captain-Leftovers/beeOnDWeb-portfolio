@@ -4,12 +4,12 @@ import Link from 'next/link'
 export default function Home() {
 	return (
 		<main className="flex flex-col xl:flex-row  items-center justify-around  bg-background dark:bg-background-dark grow w-full lg:max-w-screen-xl text-text dark:text-text-dark">
-			<div className="w-1/2">
+			<div className="md:w-1/2 bg-red-200">
 				<LaptopSVG className="w-full h-auto" />
 			</div>
 
 			<article className="flex flex-col w-fit  text-center">
-				<h1 className="self-center text-4xl font-medium ">Hi there!</h1>
+				<h1 className="self-center text-2xl sm:text-4xl font-medium ">Hi there!</h1>
 				<p className="animate-slideFromLeft ">
 					I&apos;m{' '}
 					<span className="text-2xl font-medium text-primary dark:text-primary-dark">
